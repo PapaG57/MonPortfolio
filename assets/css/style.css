@@ -95,7 +95,7 @@ p {
     font-weight: 400;
 }
 
-/* ======== background Qui suis-je ======== */
+/* ======== comportement section Qui suis-je ======== */
 
 #quisuisje {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,
@@ -111,7 +111,6 @@ strong {
     color: #4fc6eb;
 }
 
-/* ======== comportement des images section qui suis-je ======== */
 figure {
     border: thin #ffffff solid;
     display: flex;
@@ -141,4 +140,10 @@ figcaption {
 
 .compteur {
     max-width: 400px;
+}
+
+/* ======== comportement section contact ======== */
+
+.title_contact {
+    font-size: 1.5rem;
 }
