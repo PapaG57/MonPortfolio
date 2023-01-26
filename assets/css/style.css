@@ -150,7 +150,7 @@ figcaption {
                 0,
                 0,
                 0.5)), url('../img/others_img/finger-2956974__340.jpg') center center fixed no-repeat;
-    height: 1450px;
+    height: 1000px;
     background-size: cover;
     color: #fff;
     border-top: solid 80px #4fc6eb;
@@ -160,6 +160,6 @@ figcaption {
     font-size: 4rem;
 }
 
-.form-group {
+.label {
     color: #fff
 }
