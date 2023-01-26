@@ -14,7 +14,7 @@ $fromEmail = 'demo@domain.com';
 $fromName = 'Demo contact form';
 
 // une adresse e-mail qui recevra l'e-mail avec la sortie du formulaire
-$sendToEmail = 'demo@domain.com';
+$sendToEmail = 'florentgerard@fgdeveloppement.com';
 $sendToName = 'Demo contact form';
 
 // Sujet de l'email
@@ -25,10 +25,10 @@ $subject = 'Nouveau message de contact';
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Téléphone', 'email' => 'Email', 'message' => 'Message');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Formulaire de contact envoyé avec succès. Merci, je vous répondrai bientôt!';
+$okMessage = 'Formulaire de contact envoyé avec succès. Merci, je vous répondrai bientôt !';
 
 // Si quelque chose ne va pas, nous afficherons ce message.
-$errorMessage = 'Une erreur est produite lors de la soumission du formulaire. Veuillez réessayer plus tard';
+$errorMessage = 'Une erreur s est produite lors de la soumission du formulaire. Veuillez réessayer plus tard';
 
 /*
 *  EN ENVOIE!
