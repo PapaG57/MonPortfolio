@@ -60,7 +60,7 @@
                 <div class="col-md-4 my-5">
                     <img class="fg-img" src="assets/img/others_img/15-11-2022.jpg" alt="Portrait de l'auteur">
                 </div>
-                <div class="col-md-8 d-flex justify-content-center align-items-center my-5">
+                <div class="row-cols-1 col-md-8 d-flex justify-content-center align-items-center my-5">
                     <h1 class="py-3 merriweather banner-desc">Je m'appelle Florent GERARD et je vis dans la région
                         Grand-Est, dans la zone des 3 frontières (Luxembourg - Belgique - Allemangne)<br /><br />Á la
                         suite d'une
@@ -90,7 +90,7 @@
     <section id="quisuisje" class="quisuisje merriweather py-5">
         <div class="container my-5 py-5">
             <div class="row">
-                <div class="col-md-7 my-5">
+                <div class="row-cols-1 col-md-7 my-5">
                     <h3 class="titre-qui text-uppercase">Mon histoire numérique...</h3>
                     <br />
                     <p>Depuis la création des ordinateurs personnels (<strong>P</strong>ersonnal
@@ -126,7 +126,7 @@
                         invite à voir la suite...
                     </p>
                 </div>
-                <div class="col-md-5 my-5 d-flex flex-column justify-content-sm-evenly align-items-center">
+                <div class="row-cols-1 col-md-5 my-5 d-flex flex-column justify-content-sm-evenly align-items-center">
                     <h3 class="titre-qui text-uppercase">Le coin des nostalgiques</h3>
                     <figure>
                         <img class="TI994A" src="assets/img/others_img/TI_99_4A.jpg" alt="ordinateur AMSTRAD CPC 6128"
@@ -151,7 +151,7 @@
             <div class="row">
                 <div class="card mb-5 bg-light">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="row-cols-1 col-md-6">
                             <img class="img-projet" src="assets/img/img_projets/img_projet_2.png"
                                 class="img-fluid rounded-3 shadow-lg" alt="IMAGE DU PROJET 2">
                         </div>
@@ -334,21 +334,16 @@
     <section id="contact" class="meriweather py-5">
         <div class="container">
             <div class="row">
-                <div class="col-xl-8 offset-xl-2 py-5">
+                <div class="row-cols-1 col-xl-8 offset-xl-2 py-5">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <h1 class="title_contact">CONTACT</h1>
-                        <p class="lead">
-                            Florent GERARD
-                            florentgerard@fgdeveloppement.com
-                        </p>
-                        <p class="lead">This file uses PHPMailer to send the emails.</p>
+                        <p class="lead">Florent GERARD</p>
+                        <i class="bi bi-envelope-at"></i>
+                        <!-- <a href="mailto:">florentgerard@fgdeveloppement.com</a> -->
                     </div>
-                    <form id="contact-form" method="post" action="assets/contact-2.php" role="form">
-
+                    <form id="contact-form" method="post" action="assets/php/contact-2.php" role="form">
                         <div class="messages"></div>
-
                         <div class="controls">
-
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -408,17 +403,14 @@
                                 </div>
                             </div>
                         </div>
-
                     </form>
-
                 </div><!-- /.8 -->
-
             </div> <!-- /.row-->
-
         </div> <!-- /.container-->
+    </section>
 
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="contact-2.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/contact-2.js"></script>
 </body>
 
 </html>
