@@ -1,5 +1,13 @@
+/* ======== comportement de fg-navbar ======== */
 /* ======== importation de la police de la fg-navbar ======== */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Redressed&display=swap');
+
+.fg-navbar {
+    background-color: var(--bs-teal);
+    border-bottom: 1px solid var(--bs-blue);
+    height: 80px;
+    z-index: 99;
+}
 
 /* ======== polices chargées ======== */
 .redressed {
@@ -8,14 +16,6 @@
 
 .merriweather {
     font-family: "Merriweather", serif;
-}
-
-/* ======== comportement de fg-navbar ======== */
-.fg-navbar {
-    background-color: var(--bs-teal);
-    border-bottom: 1px solid var(--bs-blue);
-    height: 80px;
-    z-index: 99;
 }
 
 .fg-navbar .nav-link {
@@ -86,7 +86,6 @@
 }
 
 /* ======== comportement des H1 ======== */
-
 h1,
 h2,
 p {
