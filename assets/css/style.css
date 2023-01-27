@@ -150,7 +150,7 @@ figcaption {
                 0,
                 0,
                 0.5)), url('../img/others_img/finger-2956974__340.jpg') center center fixed no-repeat;
-    height: 1000px;
+    height: 700px;
     background-size: cover;
     color: #fff;
     border-top: solid 80px #4fc6eb;
@@ -162,4 +162,15 @@ figcaption {
 
 .label {
     color: #fff
+}
+
+/* ======== comportement footer ======== */
+
+footer {
+    background-color: #4fc6eb;
+    height: 7vh;
+}
+
+footer ul li {
+    text-decoration: none;
 }
