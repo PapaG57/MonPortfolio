@@ -170,11 +170,20 @@ figcaption {
 
 /* ======== comportement footer ======== */
 
-footer {
+/* footer {
     background-color: #4fc6eb;
     height: 7vh;
 }
 
 footer ul li {
     text-decoration: none;
+}
+
+.copyright {
+    font-size: 10px;
+} */
+
+.footer-logo {
+    width: 200px;
+    height: 90px;
 }
