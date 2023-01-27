@@ -1,3 +1,30 @@
+/* ======== comportement image FG ======== */
+.fg-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: solid 10px #fff;
+}
+
+.img-projet {
+    max-width: 600px;
+    max-height: 300px;
+}
+
+.img-car {
+    width: auto;
+    height: auto;
+}
+
+/* ======== comportement des H1 ======== */
+h1,
+h2,
+p {
+    text-align: justify;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
 /* ======== comportement de fg-navbar ======== */
 /* ======== importation de la police de la fg-navbar ======== */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Redressed&display=swap');
@@ -70,28 +97,6 @@
 .btn-order:active {
     color: #fff;
     background-color: var(--bs-blue);
-}
-
-/* ======== comportement image FG ======== */
-.fg-img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    border: solid 10px #fff;
-}
-
-.img-projet {
-    max-width: 600px;
-    max-height: 300px;
-}
-
-/* ======== comportement des H1 ======== */
-h1,
-h2,
-p {
-    text-align: justify;
-    font-size: 1.25rem;
-    font-weight: 400;
 }
 
 /* ======== comportement section Qui suis-je ======== */
