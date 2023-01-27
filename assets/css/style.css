@@ -187,3 +187,70 @@ footer ul li {
     width: 200px;
     height: 90px;
 }
+
+footer .footer_1 {
+    color: var(--footer_text);
+    padding: 40px 0;
+    background-color: var(--footer_back);
+    font-size: 0.8rem;
+}
+
+footer .footer_1 .footer_name {
+    font-size: 1.2rem;
+}
+
+footer .footer_1 .side2 {
+    text-align: right;
+}
+
+footer.footer_1 .navbar-nav {
+    float: none;
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+footer.footer_1 .navbar-nav>li {
+    display: inline-block;
+}
+
+footer .nav>li>a:focus,
+footer .nav>li>a:hover,
+footer .nav>li.open>a,
+footer .nav>li.open>a:focus,
+footer .nav>li.open>a:hover,
+footer .nav>li.active>a,
+footer .nav>li.active>a:focus,
+footer .nav>li.active>a:hover {
+    background-color: transparent !important;
+}
+
+footer.footer_1 .navbar-nav>li>a {
+    padding: 0;
+    margin: 0px 8px;
+    color: #ffffff;
+    color: var(--footer_text);
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 0.8rem;
+}
+
+html.page-loaded .moduleMenu a {
+    transition: color, background-color, border .35s;
+}
+
+footer .nav>li>a {
+    color: #ffffff;
+    color: var(--footer_text);
+}
+
+footer a {
+    color: #94763e;
+    color: var(--footer_links_color);
+}
+
+a {
+    color: #94763e;
+    color: var(--global_main_color);
+    transition: opacity .35s;
+}
