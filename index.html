@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/Logos/favicon-fg-dev.ico" />
     <script src="https://kit.fontawesome.com/b3e18aa31a.js" crossorigin="anonymous"></script>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -14,9 +15,10 @@
 </head>
 
 <body>
-    <nav class="fg-navbar navbar navbar-expand-lg position-fixed navbar-dark w-100 opacity-75">
+    <nav class="fg-navbar navbar navbar-expand-lg position-fixed navbar-dark w-100">
         <div class="container-fluid">
-            <a class="navbar-brand text-uppercase fw-bolder fs-2 mx-4 py-3 redressed" title="© FG Editions - 2023">mon
+            <a class="navbar-brand text-uppercase fw-bolder fs-2 mx-4 py-3 redressed"
+                title="© fgdeveloppement - 2023">mon
                 portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -361,24 +363,36 @@
     </section>
 
     <!-- section contact -->
-    <section id="contact" class="order-form py-5">
+    <section id="contact" class="order-form py-2">
         <div class="container">
+
             <h2 class="title_contact merriweather text-center text-light mb-4">CONTACT</h2>
-            <form action="">
+            <div class="bg-contact p-2 d-flex flex-column justify-content-center">
+                <p class="merriweather text-center text-black mb-1 py-1">Vous pouvez m'envoyer un message en remplissant
+                    le
+                    formulaire ci-dessous. Si toutefois, vous
+                    rencontriez un problème avec ce dernier vous pouvez cliquez sur le lien ci-dessous :</p>
+                <p class="merriweather text-center"><strong><a
+                            href="mailto:florentgerard@fgdeveloppement.com?subject=n'oubliez pas l'objet !">florentgerard@fgdeveloppement.com</a></strong>
+                </p>
+            </div>
+            <br />
+            <form class="mb-2" action="post">
                 <div class="row">
                     <div class="col-md-6 col-sm">
-                        <label for="entree-email" class="form-label">Entrez votre email<strong>
+                        <label for="entree-email" class="form-label">Votre email<strong>
                                 *</strong></label>
                         <div class="input-group has-validation">
-                            <span class="input-group-text"><i class="fas fa-at"></i></span>
+                            <span class="input-group-text"><i class="bi bi-envelope-at fa-lg"></i></span>
                             <input type="email" class="form-control" id="entree-email"
-                                aria-describedby="inputGroupPrepend" placeholder="exemple@opérateur.com" required>
+                                aria-describedby="inputGroupPrepend" placeholder="exemple@email.com" required>
                             <div class="invalid-feedback">
                                 SVP, Entrez un email.
                             </div>
                         </div>
                         <div class="mb-3 py-4">
-                            <label for="entree-texte" class="form-label">Messagerie</label>
+                            <label for="entree-texte" class="form-label">Messagerie<strong>
+                                    *</strong></label>
                             <textarea class="form-control" id="entree-texte" rows="5"
                                 placeholder="Tapez votre message ici" required></textarea>
                             <div class="invalid-feedback">
@@ -387,10 +401,10 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm">
-                        <label for="entree-prenom" class="form-label">Entrez votre prénom<strong>
+                        <label for="entree-prenom" class="form-label">Votre prénom<strong>
                                 *</strong></label>
                         <div class="input-group has-validation">
-                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <span class="input-group-text"><i class="bi bi-person-vcard-fill fa-lg"></i></i></span>
                             <input type="text" class="form-control" id="entree-prenom"
                                 aria-describedby="inputGroupPrepend" placeholder="Pierre" required>
                             <div class="invalid-feedback">
@@ -398,10 +412,10 @@
                             </div>
                         </div>
                         <div class="py-4">
-                            <label for="entree-nom" class="form-label">Entrez votre nom<strong>
+                            <label for="entree-nom" class="form-label">Votre nom<strong>
                                     *</strong></label>
                             <div class="input-group has-validation">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <span class="input-group-text"><i class="bi bi-person-vcard fa-lg"></i></span>
                                 <input type="text" class="form-control" id="entree-nom"
                                     aria-describedby="inputGroupPrepend" placeholder="MARTIN" required>
                                 <div class="invalid-feedback">
@@ -409,44 +423,61 @@
                                 </div>
                             </div>
                         </div>
-                        <label for="entree-email" class="form-label">Entrez votre numéro de téléphone</label>
-                        <div class="input-group has-validation">
-                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
-                            <input type="number" class="form-control" id="entree-numero" placeholder=" 06 XX XX XX XX">
+                        <div class="py-2">
+                            <label for="entree-nom" class="form-label">Votre téléphone</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text"><i class="bi bi-phone fa-lg"></i></i></span>
+                                <input type="number" class="form-control" id="entree-tel"
+                                    aria-describedby="inputGroupPrepend" placeholder="06 XX XX XX XX">
+                                <div class="invalid-feedback">
+                                    <!-- SVP, Entrez un numéro de téléphone. -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </form>
-            <div class="col-12 py-3">
+            <div class="col-12 d-flex flex-row justify-content-between">
                 <button class="btn btn-primary" type="submit">envoyer</button>
-            </div>
-            <div class="form-text text-warning"><strong>*</strong>L'astérique désigne les champs
-                obligatoires.
-            </div>
-
-            <div id="contact-email" class="form-text text-danger">Vos données ne seront jamais partagées
-                avec des tiers. (voir mentions légales)
+                <p class="form-text text-warning fw-bold"><strong>*</strong>L'astérix désigne les champs
+                    obligatoires.
+                <p> <br />
+                <p class="form-text text-danger fw-bold">Vos données ne seront jamais partagées
+                    avec des tiers. (voir mentions légales ci-dessous)</p>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="redressed">
         <div class="container">
             <div class="row">
                 <div class="row row-cols-1 col-md-6 text-light">
                     <img src="assets/img/Logos/logo-fgdev-transparent.png" alt="logo de l'auteur" class="footer-logo">
                     <h2 class="footer-h2">Copyryght © 2023 Tous droits reservés</h2>
                 </div>
-                <div class="fg-footer">
-                    <p><a class="nav-link" href="#">Github</a></p>
-                    <p><a class="nav-link" href="#">Linkedin</a></p>
-                    <p><a class="nav-link" href="#">Mentions légales</a></p>
+                <div class="col-6 row row-cols-1 col-md-6 text-light py-5">
+                    <div class="fg-footer d-flex justify-content-between align-items-center">
+                        <p class="fw-bold fs-3"><a class="github nav-link" href="https://github.com/PapaG57"><i
+                                    class="bi bi-github"></i>
+                                Github</a></p>
+                        <p class="fw-bold fs-3"><a class=" linkedin nav-link"
+                                href="https://www.linkedin.com/in/florent-gerard-0138a916b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYiNKJ%2F2QR4%2BHZQfNCBpqcw%3D%3D"><i
+                                    class="bi bi-linkedin"></i>
+                                LinkedIn</a>
+                        </p>
+                        <p class="fw-bold fs-3"><a class="mentions nav-link" href="#"><i class="bi bi-journal-text"></i>
+                                Mentions
+                                légales</a></p>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Redressed&display=swap');
+    </style>
 </body>
 
 </html>

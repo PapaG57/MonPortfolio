@@ -20,13 +20,11 @@ h1,
 h2,
 p {
     text-align: justify;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
 /* ======== comportement de fg-navbar ======== */
-/* ======== importation de la police de la fg-navbar ======== */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Redressed&display=swap');
 
 .fg-navbar {
     background-color: var(--bs-teal);
@@ -153,7 +151,7 @@ figcaption {
                 0,
                 0,
                 0.5)), url('../img/others_img/finger-2956974__340.jpg') center center fixed no-repeat;
-    height: 700px;
+    height: 750px;
     background-size: cover;
     color: #fff;
     border-top: solid 80px #4fc6eb;
@@ -163,15 +161,15 @@ figcaption {
     font-size: 4rem;
 }
 
-.label {
-    color: #fff
+.bg-contact {
+    background-color: #fff;
 }
 
 /* ======== comportement footer ======== */
 
 footer {
     background-color: #4fc6eb;
-    height: 25vh;
+    height: 20vh;
 }
 
 .copyright {
@@ -183,14 +181,14 @@ footer {
     height: 90px;
 }
 
-/* .footer-h2 {
-    font-size: 1rem;
-    font-weight: bold;
-} */
+.github:hover {
+    color: var(--bs-blue);
+}
 
-.fg-footer {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1rem;
-    font-weight: bold;
+.linkedin:hover {
+    color: var(--bs-blue);
+}
+
+.mentions:hover {
+    color: var(--bs-blue);
 }
