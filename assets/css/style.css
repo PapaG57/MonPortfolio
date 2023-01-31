@@ -15,7 +15,7 @@
     height: auto;
 }
 
-/* ======== comportement des H1 ======== */
+/* ======== comportement des H1 H2 et p ======== */
 h1,
 h2,
 p {
@@ -33,7 +33,7 @@ p {
     z-index: 99;
 }
 
-/* ======== polices chargées ======== */
+/* ======== chargement polices ======== */
 .redressed {
     font-family: "Redressed", cursive;
 }
@@ -42,6 +42,7 @@ p {
     font-family: "Merriweather", serif;
 }
 
+/* ======== comportement de la navbar ======== */
 .fg-navbar .nav-link {
     border-bottom: 2px solid transparent;
     transition: padding-bottom .4s ease-in-out, border-color .3s ease;
@@ -58,6 +59,7 @@ p {
     color: var(--bs-blue);
 }
 
+/* ======== comportement de la section accueil ======== */
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,
                 0,
@@ -96,14 +98,14 @@ p {
     background-color: var(--bs-blue);
 }
 
-/* ======== comportement section Qui suis-je ======== */
+/* ======== comportement section qui suis-je ? ======== */
 
 #quisuisje {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,
                 0,
                 0,
                 0.5)), url('../img/hd_pictures/computer_work_2.jpg') center center fixed no-repeat;
-    height: 1450px;
+    height: 1500px;
     background-size: cover;
     color: #fff;
     border-top: solid 80px #4fc6eb;
@@ -111,6 +113,10 @@ p {
 
 strong {
     color: #4fc6eb;
+}
+
+.nostaliques {
+    background-color: var(--bs-teal);
 }
 
 figure {
