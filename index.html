@@ -4,19 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/Logos/favicon-fg-dev.ico" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/b3e18aa31a.js" crossorigin="anonymous"></script>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href='assets/css/custom.css' rel='stylesheet' type='text/css'>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
-        crossorigin="anonymous"></script>
-    <script src="assets/js/contact.js"></script>
 
     <title>Mon Portfolio</title>
 </head>
@@ -369,81 +361,67 @@
     </section>
 
     <!-- section contact -->
-    <section id="contact" class="meriweather py-0">
+    <section id="contact" class="order-form py-5">
         <div class="container">
-            <div class="row">
-                <div class="row-cols-1 col-xl-8 offset-xl-2 py-0">
-                    <div class="d-flex flex-column justify-content-center align-items-center">
-                        <h1 class="title_contact">CONTACT</h1>
-                        <p>Florent GERARD</p>
-                        <p>57100, THIONVILLE, Région GRAND-EST</p>
-                        <p class="-uppercase fw-bolder merriweather "><i
-                                class="bi bi-envelope-at"></i>florentgerard@fgdeveloppement.com
-                        </p>
-                        <a class="facebook" href="#"><i class="fab fa-facebook-square fa-3x" title="Facebook"></i></a>
-                    </div>
-                    <form id="contact-form" method="post" action="assets/php/contact-2.php" role="form">
-                        <div class="messages"></div>
-                        <div class="controls">
-                            <div class="row">
-                                <div class="col-md-6 my-2">
-                                    <div class="form-group">
-                                        <label class="label" for="form_name">Nom *</label>
-                                        <input id="form_name" type="text" name="name" class="form-control"
-                                            placeholder="Veuillez entrer votre nom *" required="required"
-                                            data-error="le nom est obligatoire.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 my-2">
-                                    <div class="form-group">
-                                        <label class="label" for="form_lastname">Prénom *</label>
-                                        <input id="form_lastname" type="text" name="surname" class="form-control"
-                                            placeholder="Veuillez entre votre prénom *" required="required"
-                                            data-error="le prénom est obligatoire.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 my-2">
-                                    <div class="form-group">
-                                        <label class="label" for="form_email">Email *</label>
-                                        <input id="form_email" type="email" name="email" class="form-control"
-                                            placeholder="Veuillez entrer votre email *" required="required"
-                                            data-error="Un email valide est obligatoire.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 my-2">
-                                    <div class="form-group">
-                                        <label class="label" for="form_phone">Téléphone</label>
-                                        <input id="form_phone" type="tel" name="phone" class="form-control"
-                                            placeholder="Votre Téléphone (facultatif)">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 my-2">
-                                    <div class="form-group">
-                                        <label class="label" for="form_message">Message *</label>
-                                        <textarea id="form_message" name="message" class="form-control"
-                                            placeholder="Votre Message ici *" rows="4" required="required"
-                                            data-error="Veuillez remplir le champ Message."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 my-3 d-flex justify-content-between">
-                                    <input type="submit" class="btn btn-success btn-send" value="Envoyer">
-                                    <p class="text-muted"><strong>* Ces champs sont obligatoires.</strong></p>
-                                </div>
+            <h2 class="title_contact merriweather text-center text-light mb-4">CONTACT</h2>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6 col-sm">
+                        <label for="entree-email" class="form-label">Entrez votre email<strong>
+                                *</strong></label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text"><i class="fas fa-at"></i></span>
+                            <input type="email" class="form-control" id="entree-email"
+                                aria-describedby="inputGroupPrepend" placeholder="exemple@opérateur.com" required>
+                            <div class="invalid-feedback">
+                                SVP, Entrez un email.
                             </div>
                         </div>
-                    </form>
-                </div><!-- /.8 -->
-            </div> <!-- /.row-->
-        </div> <!-- /.container-->
+                        <div class="mb-3 py-4">
+                            <label for="entree-texte" class="form-label">Tapez votre texte</label>
+                            <textarea class="form-control" id="entree-texte" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm">
+                        <label for="entree-prenom" class="form-label py-4">Entrez votre prénom<strong>
+                                *</strong></label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <input type="text" class="form-control" id="entree-prenom"
+                                aria-describedby="inputGroupPrepend" placeholder="Pierre" required>
+                            <div class="invalid-feedback">
+                                SVP, Entrez un prénom.
+                            </div>
+                        </div>
+                        <label for="entree-nom" class="form-label">Entrez votre nom<strong>
+                                *</strong></label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <input type="text" class="form-control" id="entree-nom" aria-describedby="inputGroupPrepend"
+                                placeholder="MARTIN" required>
+                            <div class="invalid-feedback">
+                                SVP, Entrez un nom.
+                            </div>
+                        </div>
+                        <label for="entree-email" class="form-label">Entrez votre numéro de téléphone</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                            <input type="number" class="form-control" id="entree-numero" placeholder=" 06 XX XX XX XX">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="col-12 py-3">
+                <button class="btn btn-primary" type="submit">envoyer</button>
+            </div>
+                        <div class="form-text text-warning"><strong>*</strong>L'astérique désigne les champs
+                            obligatoires.
+                        </div>
+
+                        <div id="contact-email" class="form-text text-light">Vos données ne seront jamais partagées
+                                avec des tiers. (voir mentions légales)
+                        </div>
+        </div>
     </section>
 
     <footer>
@@ -463,7 +441,6 @@
     </footer>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/contact-2.js"></script>
 </body>
 
 </html>
