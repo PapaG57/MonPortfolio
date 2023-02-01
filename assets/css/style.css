@@ -151,6 +151,23 @@ figcaption {
     max-width: 400px;
 }
 
+/* ======== comportement section portfolio ======== */
+.zoom {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.zoom:hover img {
+    transform: scale(2.0);
+}
+
 /* ======== comportement section contact ======== */
 
 #contact {
