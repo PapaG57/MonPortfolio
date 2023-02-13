@@ -15,7 +15,7 @@
     height: auto;
 }
 
-/* ======== comportement des H1 H2 et p ======== */
+/* ======== comportement des H1 H2 p span et ligne de séparation ======== */
 h1,
 h2,
 p {
@@ -24,13 +24,19 @@ p {
     font-weight: 400;
 }
 
-/* ======== comportement de fg-navbar ======== */
+.p-small {
+    font-size: 0.8rem;
+}
 
-.fg-navbar {
-    background-color: var(--bs-teal);
-    border-bottom: 1px solid var(--bs-blue);
-    height: 80px;
-    z-index: 99;
+.p-italic {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.ligne {
+    margin: 10px;
+    width: 580px;
+    border: solid 2px;
 }
 
 /* ======== chargement polices ======== */
@@ -40,6 +46,15 @@ p {
 
 .merriweather {
     font-family: "Merriweather", serif;
+}
+
+/* ======== comportement de fg-navbar ======== */
+
+.fg-navbar {
+    background-color: var(--bs-teal);
+    border-bottom: 1px solid var(--bs-blue);
+    height: 80px;
+    z-index: 99;
 }
 
 /* ======== comportement de la navbar ======== */
@@ -57,6 +72,19 @@ p {
 
 .text-bg-var {
     color: var(--bs-blue);
+}
+
+/* ======== comportement du bouton "me contacter" fg-navbar ======== */
+.btn-order {
+    color: var(--bs-blue);
+    border-color: var(--bs-blue);
+    transition: 0.5s;
+}
+
+.btn-order:hover,
+.btn-order:active {
+    color: #fff;
+    background-color: var(--bs-blue);
 }
 
 /* ======== comportement de la section accueil ======== */
@@ -85,18 +113,6 @@ p {
     background-size: cover;
 }
 
-/* ======== comportement du bouton "me contacter" fg-navbar ======== */
-.btn-order {
-    color: var(--bs-blue);
-    border-color: var(--bs-blue);
-    transition: 0.5s;
-}
-
-.btn-order:hover,
-.btn-order:active {
-    color: #fff;
-    background-color: var(--bs-blue);
-}
 
 /* ======== comportement section qui suis-je ? ======== */
 
@@ -151,7 +167,7 @@ figcaption {
     max-width: 400px;
 }
 
-/* ======== comportement section portfolio ======== */
+/* ======== comportement section portfolio - zoom sur image======== */
 .zoom {
     width: 200px;
     height: 200px;
@@ -170,7 +186,7 @@ figcaption {
 
 /* ======== comportement section CV ======== */
 #cv {
-    height: 1600px;
+    height: 1800px;
 }
 
 .logos {
@@ -183,12 +199,17 @@ figcaption {
     height: 50px;
 }
 
+.a-decompte {
+    text-decoration: none;
+    color: #000;
+}
+
+/* ======== comportement section CV - langues ======== */
 .comp1{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
-
 
 .c30{
     width: 30%;
@@ -222,6 +243,28 @@ figcaption {
     margin-bottom: 0.25em;
     border-radius: 5px;
     background-color: grey;
+}
+
+
+/* ======== comportement section CV - Centres d'intérêt ======== */
+.content-interet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.interet {
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.interet img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555;
 }
 
 
