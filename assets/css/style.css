@@ -168,8 +168,13 @@ figcaption {
     transform: scale(2.0);
 }
 
-/* ======== comportement section contact ======== */
+/* ======== comportement section CV ======== */
+.logos {
+    width: 50px;
+    height: 50px;
+}
 
+/* ======== comportement section contact ======== */
 #contact {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,
                 0,
