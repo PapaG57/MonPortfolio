@@ -323,4 +323,60 @@ footer {
 
 .mentions:hover {
     color: var(--bs-blue);
+    cursor: pointer;
 }
+
+#div-mentions-to-open {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    font-family: "meriweather", serif;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    z-index: 1;
+}
+
+#div-mentions-to-open > #mentions-text {
+    background-color: #dedede;
+    width: 80%;
+    max-width: 800px;
+    max-height: 90%;
+    font-family: "meriweather", serif;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    border: 2px #fff solid;
+    border-radius: 10px;
+    margin: 0 0 5px 0;
+}
+
+#div-mentions-to-open > #mentions-text > #mentions-title {
+    text-align: center;
+}
+
+#div-mentions-to-open > #mentions-close {
+    cursor: pointer;
+    width: 100px;
+    background: #4B8;
+    color: #fff;
+    font-size: 20px;
+    font-family: "meriweather", serif;
+    border: 2px #fff solid;
+    border-radius: 10px;
+    margin: 0;
+    transition: 0.5s;
+}
+
+#div-mentions-to-open > #mentions-close:hover {
+    background: #4B8;
+    color: #000;
+    border: 2px #000 solid;
+    }
