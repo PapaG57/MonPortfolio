@@ -145,9 +145,6 @@ figure {
     border: thin #ffffff solid;
     display: flex;
     flex-flow: column;
-    padding: 5px;
-    max-width: 600px;
-    margin: auto;
 }
 
 .amstrad,
@@ -191,7 +188,7 @@ figcaption {
 
 /* ======== comportement section CV ======== */
 #cv {
-    height: 1800px;
+    height: 1650px;
 }
 
 .logos {
@@ -254,12 +251,19 @@ figcaption {
 /* ======== comportement section CV - Centres d'intérêt ======== */
 .content-interet {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
+.div-interet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .interet {
-    flex: 0 1 50%;
+    /* flex: 0 1 50%; */
     display: flex;
     flex-flow: column wrap;
     align-items: center;
