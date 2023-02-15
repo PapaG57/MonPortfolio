@@ -1,7 +1,3 @@
-/* #div-mentions-to-open {
-    display: none;
-} */
-
 /* ======== comportement des images ======== */
 .fg-img {
     width: 420px;
@@ -18,6 +14,9 @@
     width: auto;
     height: auto;
 }
+
+/* ======== comportement des images  - Zoom ======== */
+
 
 /* ======== comportement des H1 H2 p span et ligne de séparation ======== */
 h1,
@@ -173,7 +172,7 @@ figcaption {
     max-width: 400px;
 }
 
-/* ======== comportement section portfolio - zoom sur image======== */
+/* ======== comportement section portfolio - zoom sur image ======== */
 .zoom {
     width: 200px;
     height: 200px;
