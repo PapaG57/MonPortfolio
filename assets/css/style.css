@@ -184,7 +184,7 @@ figcaption {
 }
 
 /* ======== comportement section portfolio - zoom sur image ======== */
-.zoom {
+/* .zoom {
     width: 200px;
     height: 200px;
     overflow: hidden;
@@ -198,11 +198,11 @@ figcaption {
 
 .zoom:hover img {
     transform: scale(2.0);
-}
+} */
 
 /* ======== comportement section CV ======== */
 #cv {
-    height: 1750px;
+    height: 1850px;
 }
 
 .logos {
