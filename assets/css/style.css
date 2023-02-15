@@ -166,6 +166,13 @@ figcaption {
 
 .titre-qui {
     font-size: 1.5rem;
+    font-family: "Meriweather", serif;
+    font-weight: 800;
+}
+
+.titre-qui2 {
+    font-size: 0.8rem;
+    font-weight: 800;
 }
 
 .compteur {
@@ -191,7 +198,7 @@ figcaption {
 
 /* ======== comportement section CV ======== */
 #cv {
-    height: 1650px;
+    height: 1750px;
 }
 
 .logos {
@@ -207,6 +214,11 @@ figcaption {
 .a-decompte {
     text-decoration: none;
     color: #000;
+}
+
+#decompte {
+    width: 220px;
+    height: 70px;
 }
 
 /* ======== comportement section CV - langues ======== */
