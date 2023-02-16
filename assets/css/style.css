@@ -180,6 +180,22 @@ figcaption {
 }
 
 /* ======== comportement section portfolio - zoom sur image ======== */
+.btn-projets {
+    font-size: 15px;
+    margin-top: 25px;
+    width: 180px;
+    height: 50px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #4B8;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.bnt-projets:hover {
+    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+
 /* .zoom {
     width: 200px;
     height: 200px;
