@@ -1,3 +1,8 @@
+/* ======== comportement du body ======== */
+body {
+    font-family: "Merriweather", serif;
+}
+
 /* ======== comportement des images ======== */
 .fg-img {
     width: 420px;
@@ -16,7 +21,21 @@
 }
 
 /* ======== comportement des images  - Zoom ======== */
+/* .zoom {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
 
+.zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.zoom:hover img {
+    transform: scale(2.0);
+} */
 
 /* ======== comportement des H1 H2 p span et ligne de séparation ======== */
 h1,
@@ -28,6 +47,10 @@ p {
 
 .p-small {
     font-size: 0.8rem;
+}
+
+.p-justify {
+    text-align: justify ;
 }
 
 .p-italic {
@@ -187,35 +210,19 @@ figcaption {
     width: 180px;
     height: 50px;
     color: #fff;
-    background-color: #4B8;
+    background-color: var(--bs-blue);
     border: 0;
     text-transform: uppercase;
 }
 
-/* .bnt-projets:hover {
+.btn-projets:hover {
     box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
-} */
+}
 
 /* .btn-construction {
     color: #d4cbcb;
     font-size: 14px;
     font-family: "Merriweather", serif;    
-} */
-
-/* .zoom {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.zoom img {
-    width: 100%;
-    transition: 0.5s all ease-in-out;
-}
-
-.zoom:hover img {
-    transform: scale(2.0);
 } */
 
 /* ======== comportement section CV ======== */
@@ -416,3 +423,24 @@ footer {
     color: #000;
     border: 2px #000 solid;
     }
+
+/* ======== comportement page rapport ======== */
+#rapports {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,
+    0,
+    0,
+    0.5)), url('../img/hd_pictures/informatique_code_3.jpg') center center fixed no-repeat;
+height: 750px;
+background-size: cover;
+}
+
+.titre-rapports {
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #4fc6eb;
+    border-radius: 10px;
+    border:  solid 4px;
+    border-color: #4B8;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
