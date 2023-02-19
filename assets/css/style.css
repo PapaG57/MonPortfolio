@@ -426,11 +426,11 @@ footer {
 
 /* ======== comportement page rapport ======== */
 #rapports {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,
     0,
     0,
-    0.5)), url('../img/hd_pictures/informatique_code_3.jpg') center center fixed no-repeat;
-height: 750px;
+    0.8)), url('../img/hd_pictures/informatique_code_3.jpg') center center fixed no-repeat;
+height: auto;
 background-size: cover;
 }
 
@@ -444,3 +444,25 @@ background-size: cover;
     border-color: #4B8;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
+
+.carte-after {
+    background-color: #4fc6eb;
+    border-radius: 10px;
+    border:  solid 4px;
+    border-color: #4B8;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    width: auto;
+    height: 500px;
+}
+
+.img-rapport {
+    padding: 10px;
+    width: 600px;
+}
+
+.img-rapport-sm {
+    padding: 10px;
+    width: 600px;
+    height: 200px;
+}
+
