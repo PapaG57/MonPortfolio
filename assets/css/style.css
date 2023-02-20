@@ -230,6 +230,12 @@ figcaption {
     height: 1850px;
 }
 
+.card-blur {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    margin: 0 40px 0 40px;
+}
+
 .logos {
     width: 40px;
     height: 40px;
@@ -429,7 +435,7 @@ footer {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,
     0,
     0,
-    0.8)), url('../img/hd_pictures/informatique_code_3.jpg') center center fixed no-repeat;
+    0.8)), url('../img/hd_pictures/2-computers-work.jpg') center center fixed no-repeat;
 height: auto;
 background-size: cover;
 }
