@@ -11,31 +11,14 @@ body {
 }
 
 .img-projet {
-    max-width: 600px;
-    max-height: 300px;
+    width: 600px;
+    height: 400px;
 }
 
 .img-car {
     width: auto;
     height: auto;
 }
-
-/* ======== comportement des images  - Zoom ======== */
-/* .zoom {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.zoom img {
-    width: 100%;
-    transition: 0.5s all ease-in-out;
-}
-
-.zoom:hover img {
-    transform: scale(2.0);
-} */
 
 /* ======== comportement des H1 H2 p span et ligne de séparation ======== */
 h1,
@@ -203,6 +186,23 @@ figcaption {
 }
 
 /* ======== comportement section portfolio - zoom sur image ======== */
+/* ======== comportement des images  - Zoom ======== */
+/* .zoom {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.zoom:hover img {
+    transform: scale(2.0);
+} */
+
 .btn-projets {
     font-family: "Merriweather", serif;
     font-size: 15px;
