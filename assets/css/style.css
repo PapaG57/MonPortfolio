@@ -43,7 +43,7 @@ p {
 
 .p-presentation {
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     background-color: transparent;
     backdrop-filter: blur(30px);
@@ -213,8 +213,6 @@ figcaption {
 }
 
 .card-blur {
-    background-color: transparent;
-    backdrop-filter: blur(15px);
     margin: 0 40px 0 40px;
 }
 
