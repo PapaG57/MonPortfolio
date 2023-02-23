@@ -45,6 +45,9 @@ p {
     text-align: justify;
     font-size: 1.2rem;
     font-weight: 400;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
 }
 
 .ligne {
@@ -185,23 +188,7 @@ figcaption {
     max-width: 400px;
 }
 
-/* ======== comportement section portfolio - zoom sur image ======== */
-/* ======== comportement des images  - Zoom ======== */
-/* .zoom {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.zoom img {
-    width: 100%;
-    transition: 0.5s all ease-in-out;
-}
-
-.zoom:hover img {
-    transform: scale(2.0);
-} */
+/* ======== comportement section portfolio ======== */
 
 .btn-projets {
     font-family: "Merriweather", serif;
@@ -219,11 +206,6 @@ figcaption {
     box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
-/* .btn-construction {
-    color: #d4cbcb;
-    font-size: 14px;
-    font-family: "Merriweather", serif;    
-} */
 
 /* ======== comportement section CV ======== */
 #cv {
