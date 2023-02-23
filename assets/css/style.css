@@ -461,19 +461,9 @@ background-size: cover;
 
 .img-rapport {
     padding: 10px;
-    width: 600px;
+    width: 100%;
 }
 
-.img-rapport-sm {
-    padding: 10px;
-    width: 600px;
-    height: 200px;
-}
-
-.img-rapport-lg {
-    max-width: 1100px;
-    max-height: 600px;
-}
 
 .btn-modal {
     border: var(--bs-blue);
@@ -485,3 +475,7 @@ background-size: cover;
     border:  solid 4px;
     color: #fff;
 }
+
+/* ======== format responsive ======== */
+/* ========  page rapport ======== */
+
