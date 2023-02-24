@@ -1,6 +1,9 @@
 /* ======== comportement du body ======== */
 body {
     font-family: "Merriweather", serif;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 /* ======== comportement des images ======== */
@@ -48,6 +51,7 @@ p {
     background-color: transparent;
     backdrop-filter: blur(30px);
     border-radius: 10px;
+    padding: 20px;
 }
 
 .ligne {
@@ -456,7 +460,7 @@ background-size: cover;
     border-color: #4B8;
     text-shadow: black 0.1em 0.1em 0.2em;
     width: auto;
-    height: 700px;
+    height: 750px;
 }
 
 .img-rapport {
@@ -464,10 +468,9 @@ background-size: cover;
     width: 100%;
 }
 
-
 .btn-modal {
     border: var(--bs-blue);
-
+    width: 100%;
 }
 
 .modal-content {
@@ -477,5 +480,73 @@ background-size: cover;
 }
 
 /* ======== format responsive ======== */
+/* ======== page index.html ======== */
+
+@media screen and (max-width: 992px) {
+    .fs-4 {
+        font-size: 1rem!important;
+    }
+
+    .fs-2 {
+        font-size: 20px!important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    .navbar, .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: flex-start!important;
+    }
+
+    /* .w-100 {
+        width: auto!important;
+    } */
+
+    .fs-2 {
+        font-size: 20px!important;
+    }
+}
+
+
+
+
+
+
+
 /* ========  page rapport ======== */
 
+@media screen and (max-width: 992px) {
+
+
+}
+
+
+@media screen and (max-width: 576px)  {
+
+    .row {
+        margin-left: 0!important;  
+    }
+
+    .fs-1 {
+        font-size: 15px!important;
+    }
+
+    .fs-2 {
+        font-size: 15px!important;
+    }
+
+    .titre-rapports {
+        font-size: 1.2rem;
+    }
+
+    .py-5 {
+        padding-top: 7rem!important;
+        padding-bottom: 0!important;
+    }
+
+    .collapse {
+        background-color: #4B8;
+    }
+}
