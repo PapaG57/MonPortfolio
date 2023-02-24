@@ -519,9 +519,15 @@ background-size: cover;
 
 @media screen and (max-width: 992px) {
 
+    .fs-4 {
+        font-size: 1rem!important;
+    }
+
+    .fs-2 {
+        font-size: 20px!important;
+    }
 
 }
-
 
 @media screen and (max-width: 576px)  {
 
@@ -529,7 +535,7 @@ background-size: cover;
         margin-left: 0!important;  
     }
 
-    .fs-1 {
+    .fs-3 {
         font-size: 15px!important;
     }
 
@@ -541,9 +547,14 @@ background-size: cover;
         font-size: 1.2rem;
     }
 
+    .my-5 {
+        margin-top: 3rem!important;
+        margin-bottom: 0!important;
+    }
+
     .py-5 {
-        padding-top: 7rem!important;
-        padding-bottom: 0!important;
+        padding-top: 3rem!important;
+        padding-bottom: 1rem!important;
     }
 
     .collapse {
