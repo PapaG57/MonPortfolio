@@ -483,6 +483,7 @@ background-size: cover;
 /* ======== page index.html ======== */
 
 @media screen and (max-width: 992px) {
+
     .fs-4 {
         font-size: 1rem!important;
     }
@@ -490,14 +491,24 @@ background-size: cover;
     .fs-2 {
         font-size: 20px!important;
     }
+
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: flex-start!important;
+    }
 }
 
 @media screen and (max-width: 576px) {
     
-    .navbar, .container-fluid {
+    .container-fluid {
         padding-left: 0;
         padding-right: 0;
         justify-content: flex-start!important;
+    }
+
+    .collapse {
+        background-color: #4B8;
     }
 
     /* .w-100 {
@@ -505,7 +516,7 @@ background-size: cover;
     } */
 
     .fs-2 {
-        font-size: 20px!important;
+        font-size: 15px!important;
     }
 }
 
@@ -526,7 +537,6 @@ background-size: cover;
     .fs-2 {
         font-size: 20px!important;
     }
-
 }
 
 @media screen and (max-width: 576px)  {
