@@ -8,8 +8,8 @@ body {
 
 /* ======== comportement des images ======== */
 .fg-img {
-    width: 420px;
-    height: 360px;
+    width: 400px;
+    height: 300px;
     border-radius: 50%;
 }
 
@@ -307,7 +307,6 @@ figcaption {
 }
 
 .interet {
-    /* flex: 0 1 50%; */
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -496,14 +495,49 @@ background-size: cover;
     .image-992 {
         width: 470px;
     }
+
+    .competences-992 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ligne {
+        width: 400px;
+    }
+
+    .card-text {
+        font-size: .8rem;
+    }
+
+    .p-pres-992 {
+        font-size: .8rem;        
+    }
+
+    #quisuisje {
+        height: 1700px;
+    }
+
+    #cv {
+        height: 1950px;
+    }
+
+    .fg-img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .interet img {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 
 @media screen and (max-width: 576px) {
     
-.navbar>.container-fluid {
+/* .navbar>.container-fluid {
     
-}
+} */
 
     .collapse {
         background-color: #4B8;
