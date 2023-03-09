@@ -495,8 +495,8 @@
 
             <h2 class="title_contact merriweather text-center text-light mb-4">CONTACT</h2>
             <div class="bg-contact p-2 d-flex flex-column justify-content-center rounded">
-                <p class="merriweather text-center text-black mb-1 py-1">Si vous souhaitez me contacter, n'hésitez pas à m'envoyer un message en cliquant sur le lien ci-dessous.
-                <p class="merriweather text-center">
+                <p class="merriweather text-center text-black mb-1 py-1 p-contact">Si vous souhaitez me contacter, n'hésitez pas à m'envoyer un message en cliquant sur le lien ci-dessous.
+                <p class="merriweather text-center p-contact">
                     <strong>
                         <a href="mailto:florentgerard@fgdeveloppement.com?subject=n'oubliez pas l'objet !">florentgerard@fgdeveloppement.com</a>
                     </strong>
@@ -578,57 +578,50 @@
         </div>
     </section>
 
-    <footer class="redressed" id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="row row-cols-1 col-md-6 text-light">
-                    <img src="assets/img/Logos/logo-fgdev-transparent.png" alt="logo de l'auteur" class="footer-logo">
-                    <h2 class="footer-h2">© 2023 - Tous droits reservés</h2>
-                </div>
-                <div class="col-6 row row-cols-1 col-md-6 text-light py-5">
-                    <div class="fg-footer d-flex justify-content-between align-items-center">
-                        <p class="fw-bold fs-3"><a class="github nav-link" href="https://github.com/PapaG57" target="_blank"><i
-                                    class="bi bi-github"></i>
-                                Github</a></p>
-                        <p class="fw-bold fs-3"><a class=" linkedin nav-link"
-                                href="https://www.linkedin.com/in/florent-gerard-0138a916b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYiNKJ%2F2QR4%2BHZQfNCBpqcw%3D%3D" target="_blank"><i
-                                    class="bi bi-linkedin"></i>
-                                LinkedIn</a>
-                        </p>
-                        <p class="fw-bold fs-3"><a class="mentions nav-link" id="mentions" onclick="showOrCloseMentions()"><i class="bi bi-journal-text"></i>
-                                Mentions
-                                légales</a></p>
-                                <div id="div-mentions-to-open">
-                                    <div id="mentions-text">
-                                        <p id="mentions-title"><b>MENTIONS LÉGALES</b></p>
-                                        <p>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance
-                                        en l'économie numérique, il est précisé aux utilisateurs de ce site l'identité des
-                                        différents intervenants dans le cadre de sa réalisation et de son suivi.</p>
-    
-                                        <p><b>ÉDITION DU SITE</b>
-                                        <br>Le présent site, accessible à l’URL https://fgdeveloppement.portfolio.com,
-                                        est édité par Florent GERARD, résidant à 5 rue du Quartier Étage 3 Appt 8
-                                        57100&nbsp;THIONVILLE, de nationalité française (France), né le 24/10/1968.</p>
-    
-                                        <p><b>HÉBERGEMENT</b>
-                                        <br>Le site est hébergé par la société 007hebergement,
-                                        situé 10 rue Penthièvre 75008 Paris accessible via le site <a href="https://www.007hebergement.com/" target="_blank">007 hebergement</a>.</p>
-    
-                                        <p><b>Directeur de publication</b>
-                                        <br>Le Directeur de la publication du site est Florent GERARD.</p>
-    
-                                        <p><b>Me contacter</b>
-                                        <br>Par téléphone : +33 6 45 65 65 17
-                                        <br>Par email : florentgerard@fgdeveloppement.com
-                                        <br>Par courrier : 5 rue du Quartier Etage 3 Appt 8 57100&nbsp;THIONVILLE</p>
-    
-                                        <p>Génération des mentions légales par
-                                        <a href="https://www.legalstart.fr/" target="_blank">Legalstart</a>.
-                                    </p></div>
-                                    <span id="mentions-close" onclick="showOrCloseMentions()">Fermer</span>
-                                </div>                               
-                    </div>
-                </div>
+    <footer id="footer">
+        <div class="footer-liens text-light py-5">
+            <div class="fg-footer d-flex justify-content-evenly align-items-center">
+                <p class="fw-bold fs-3"><a class="github nav-link" href="https://github.com/PapaG57" target="_blank"><i
+                            class="bi bi-github"></i>
+                        Github</a></p>
+                <p class="fw-bold fs-3"><a class=" linkedin nav-link"
+                        href="https://www.linkedin.com/in/florent-gerard-0138a916b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYiNKJ%2F2QR4%2BHZQfNCBpqcw%3D%3D" target="_blank"><i
+                            class="bi bi-linkedin"></i>
+                        LinkedIn</a>
+                </p>
+                <p class="fw-bold fs-3"><a class="mentions nav-link" id="mentions" onclick="showOrCloseMentions()"><i class="bi bi-journal-text"></i>
+                        Mentions
+                        légales</a></p>
+                        <div id="div-mentions-to-open">
+                            <div id="mentions-text">
+                                <p id="mentions-title"><b>MENTIONS LÉGALES</b></p>
+                                <p class="p-mention">Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance
+                                en l'économie numérique, il est précisé aux utilisateurs de ce site l'identité des
+                                différents intervenants dans le cadre de sa réalisation et de son suivi.</p>    
+                                <p class="p-mention"><b>ÉDITION DU SITE</b>
+                                <br>Le présent site, accessible à l’URL https://fgdeveloppement.portfolio.com,
+                                est édité par Florent GERARD, résidant à 5 rue du Quartier Étage 3 Appt 8
+                                57100&nbsp;THIONVILLE, de nationalité française (France), né le 24/10/1968.</p>    
+                                <p class="p-mention"><b>HÉBERGEMENT</b>
+                                <br>Le site est hébergé par la société 007hebergement,
+                                situé 10 rue Penthièvre 75008 Paris accessible via le site <a href="https://www.007hebergement.com/" target="_blank">007 hebergement</a>.</p>    
+                                <p class="p-mention"><b>Directeur de publication</b>
+                                <br>Le Directeur de la publication du site est Florent GERARD.</p>
+                                <p class="p-mention"><b>Me contacter</b>
+                                <br>Par téléphone : +33 6 45 65 65 17
+                                <br>Par email : florentgerard@fgdeveloppement.com
+                                <br>Par courrier : 5 rue du Quartier Etage 3 Appt 8 57100&nbsp;THIONVILLE</p>    
+                                <p class="p-mention">Génération des mentions légales par
+                                <a href="https://www.legalstart.fr/" target="_blank">Legalstart</a>.
+                            </p></div>
+                            <span id="mentions-close" onclick="showOrCloseMentions()">Fermer</span>
+                        </div>                               
+            </div>
+        </div>
+        <div class="cont-footer redressed text-light">
+            <div class="d-flex justify-content-start align-items-center">
+                <img src="assets/img/Logos/logo-fgdev-transparent.png" alt="logo de l'auteur" class="footer-logo">
+                <h2 class="copyright">© 2023 - Tous droits reservés</h2>
             </div>
         </div>
     </footer>
