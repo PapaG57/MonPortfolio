@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/Logos/favicon-fg-dev.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/Logos/favicon-fg-dev.ico">
     <script src="https://kit.fontawesome.com/b3e18aa31a.js" crossorigin="anonymous"></script>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="assets/css/lightbox.css" rel="stylesheet" />
+    <link href="assets/css/lightbox.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Redressed&display=swap');
+    </style>
 
     <title>Mon Portfolio</title>
 </head>
@@ -29,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 redressed fs-4">
                     <li class="nav-item pe-4">
-                        <a class="nav-link active" aria-current="page" href="#" title="Retour à l'accueil">Accueil</a>
+                        <a class="nav-link active" aria-current="page" href="#accueil" title="Retour à l'accueil">Accueil</a>
                     </li>
                     <li class="nav-item pe-4">
                         <a class="nav-link" href="#quisuisje" title="Connaître mon histoire de vie">Qui suis-je ?</a>
@@ -37,12 +40,10 @@
                     <li class="nav-item pe-4">
                         <a class="nav-link" href="#portfolio" title="Voir mes projets réalisés">Mon Portfolio</a>
                     </li>
-                    </li>
                     <li class="nav-item pe-4">
                         <a class="nav-link" href="#cv" title="CV interactif">Mon CV</a>
-                        <li class="nav-item pe-4">
-                            <a class="btn btn-order btn-lg rounded-0" href="#contact">Me contacter</a>
-                        </li>
+                    <li class="nav-item pe-4">
+                        <a class="btn btn-order btn-lg rounded-0" href="#contact">Me contacter</a>
                     </li>
                     <li class="nav-item pe-4">
                         <a class="nav-link" href="#footer" title="Accès à mon Linkedin & Github">Autres liens</a>
@@ -53,33 +54,35 @@
     </nav>
 
     <!-- section accueil -->
-    <section class="banner pt-5">
-        <div class="container my-5 py-3">
-            <div class="row">
-                <div class="row row-cols-1 col-md-4 my-4">
-                    <img class="fg-img" src="assets/img/others_img/Photo-CV-07-12-22.jpg" alt="Portrait de l'auteur">
-                </div>
-                <div class="row-cols-1 col-md-8 d-flex justify-content-center align-items-center my-5">
-                    <p class="p-presentation text-light">Bonjour,<br /><br /> je me nomme Florent GERARD et je vis dans la région
-                        Grand-Est, dans la zone des 3 frontières  (Luxembourg - Belgique - Allemagne)<br /><br />Á la
-                        suite d'une
-                        reconversion
-                        professionnelle, j'ai passé mon diplôme de <strong>développeur web</strong>, (niveau bac+2) que
-                        j'ai
-                        obtenu en octobre 2022. <br /><br /> Sur ce site, je vous présente mon CV et mes projets
-                        réalisés
-                        lors
-                        de ma
-                        formation chez OpenClassrooms.<br /><br />
-                        Inscrit au campus "MEWO" de Metz (57 - Moselle) où je commence en septembre 2023, je cherche à
-                        me former en tant que <strong>développeur
-                            full-stack </strong>, (niveau bac+3).<br /><br />
-                        Si vous souhaitez connaître en détail mes motivations et mon parcours, je vous invite à
-                        poursuivre dans la rubrique "Qui suis-je ?"
-                        <br /><br />
-                        <sub><em>(Site réalisé par mes soins à l'aide, entre autre, de bootstrap
-                                5.)</em></sub>
-                    </p>
+    <section id="accueil">
+        <div class="banner pt-5">
+            <div class="container my-5 py-3">
+                <div class="row">
+                    <div class="row row-cols-1 col-md-4 my-4">
+                        <img class="fg-img" src="assets/img/others_img/Photo-CV-07-12-22.jpg" alt="Portrait de l'auteur">
+                    </div>
+                    <div class="row-cols-1 col-md-8 d-flex justify-content-center align-items-center my-5">
+                        <p class="p-presentation text-light">Bonjour,<br><br> je me nomme Florent GERARD et je vis dans la région
+                            Grand-Est, dans la zone des 3 frontières  (Luxembourg - Belgique - Allemagne)<br><br>Á la
+                            suite d'une
+                            reconversion
+                            professionnelle, j'ai passé mon diplôme de <strong>développeur web</strong>, (niveau bac+2) que
+                            j'ai
+                            obtenu en octobre 2022. <br><br> Sur ce site, je vous présente mon CV et mes projets
+                            réalisés
+                            lors
+                            de ma
+                            formation chez OpenClassrooms.<br><br>
+                            Inscrit au campus "MEWO" de Metz (57 - Moselle) où je commence en septembre 2023, je cherche à
+                            me former en tant que <strong>développeur
+                                full-stack </strong>, (niveau bac+3).<br><br>
+                            Si vous souhaitez connaître en détail mes motivations et mon parcours, je vous invite à
+                            poursuivre dans la rubrique "Qui suis-je ?"
+                            <br><br>
+                            <sub><em>(Site réalisé par mes soins à l'aide, entre autre, de bootstrap
+                                    5.)</em></sub>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,14 +94,14 @@
             <div class="row">
                 <div class="row row-cols-1 col-md-7">
                     <h3 class="titre-qui text-uppercase text-bg-light">Mon histoire numérique...</h3>
-                    <br />
+                    <br>
                     <p class="p-presentation">Depuis la création des ordinateurs personnels ou PC (<strong>P</strong>ersonnal
                         <strong>C</strong>omputer
                         😉,
                         et non je ne suis pas un dinosaure 🐲🙈), j'étais passionné par cette nouvelle technologie qui
                         s'ouvrait à moi.
                         Les joies des tous premiers ordinateurs sans disque dur, voir sans floppy disc mais des cassettes
-                        audios qui devenaient des cassettes numériques ! <br /> <br /> J'ai donc fait mes premiers pas
+                        audios qui devenaient des cassettes numériques ! <br> <br> J'ai donc fait mes premiers pas
                         avec un
                         <strong>TI 99 4A</strong> (Texas Intrument) qui se branchait derrière la télévision avec une
                         prise
@@ -108,17 +111,17 @@
                         Malheureusement, je dépendais du programme télé de mes parents, et pour eux, cette technologie
                         se
                         limitait à une excentricité plutôt qu'à un produit d'avenir, ce dont j'étais vraiment
-                        persuadé ! Et l'avenir m'a donné raison.<br /> Puis je me suis acheté mon ordinateur avec mes
+                        persuadé ! Et l'avenir m'a donné raison.<br> Puis je me suis acheté mon ordinateur avec mes
                         premiers salaires : un <strong>AMSTRAD CPC 6128</strong> Quelle belle aventure que j'ai eu à
                         programmer en basic avec cet outil-là, même s'il n'y avait toujours pas de disque dur ! C'était
-                        toute une époque...😎<br /> <br /> Cependant, comme il n'y avait pas d'écoles
+                        toute une époque...😎<br> <br> Cependant, comme il n'y avait pas d'écoles
                         d'informatique comme aujourd'hui et loin de toutes villes qui auraient pu me faire évoluer
                         dans ce domaine, j'ai donc continué de faire de l'informatique, toujours en autodidacte (montage
                         de PC, réseaux, création de pages web). Á mon ancien poste, j'avais souvent le rôle de
                         correspondant
                         informatique local. Comme vous l'avez certainement constaté, je n'ai jamais réellement abandonné
                         l'informatique car c'est vraiment une
-                        passion ! <br /> <br /> Après 27 ans chez Voies Navigables de France, changement radical ! j'ai
+                        passion ! <br> <br> Après 27 ans chez Voies Navigables de France, changement radical ! j'ai
                         eu
                         l'opportunité de faire une reconversion professionnelle. Changement de départements, je suis
                         devenu un fonctionnaire en
@@ -129,8 +132,8 @@
                         épouse, de mes enfants, et bien sûr, de mon mentor, Oumar Soumaré, qui a su me donner la force
                         en moi nécessaire pour réussir. Je finirai cette missive par
                         l'équipe d'OpenClassrooms qui m'a beaucoup aidé et également sans qui je n'aurai pas pu réussir. Un grand
-                        merci à tous ! <br /> <br /> prochaine étape : Développeur web full stack. J'espère que ça ne
-                        sera pas trop ambitieux mais j'y crois, alors pourquoi pas ?<br /> <br /> En attendant, je vous
+                        merci à tous ! <br> <br> prochaine étape : Développeur web full stack. J'espère que ça ne
+                        sera pas trop ambitieux mais j'y crois, alors pourquoi pas ?<br> <br> En attendant, je vous
                         invite à voir la suite...
                     </p>
                 </div>
@@ -159,8 +162,7 @@
                 <div class="card mb-5 bg-light">
                     <div class="row">
                         <div class="row row-cols-1 col-md-6">
-                            <img class="img-projet" src="assets/img/img_projets/img_projet_2.png"
-                                class="img-fluid rounded-3 shadow-lg" alt="IMAGE DU PROJET 2">
+                            <img class="img-projet img-fluid rounded-3 shadow-lg" src="assets/img/img_projets/img_projet_2.png" alt="IMAGE DU PROJET 2">
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">
@@ -187,16 +189,14 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <img class="img-projet" src="assets/img/img_projets/img_projet_3.jpg"
-                                class="img-fluid rounded-3 shadow-lg" alt="IMAGE DU PROJET 3">
+                            <img class="img-projet img-fluid rounded-3 shadow-lg" src="assets/img/img_projets/img_projet_3.jpg" alt="IMAGE DU PROJET 3">
                         </div>
                     </div>
                 </div>
                 <div class="card mb-5 bg-light">
                     <div class="row">
                         <div class="col-md-6">
-                            <img class="img-projet image-992" src="assets/img/img_projets/img_projet_4.jpg"
-                                class="img-fluid rounded-3 shadow-lg" alt="IMAGE DU PROJET 4">
+                            <img class="img-projet image-992 img-fluid rounded-3 shadow-lg" src="assets/img/img_projets/img_projet_4.jpg" alt="IMAGE DU PROJET 4">
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">
@@ -232,22 +232,22 @@
                                 <p class="card-text">3) Constitution d'une page panier et de confirmation (avec un numéro de validation).</p>
                                 <p class="card-text">4) Sécurisation des données dans le localstorage.</p>
                                 <p class="card-text"><sub><em>NB : La partie HTML/CSS était déjà construite.</em></sub></p>
-                                <form action=""  title="lien en cours de construction" target="_blank">
+                                <form title="lien en cours de construction" target="_blank">
                                     <button type="button" class="btn-projets rounded" disabled>Voir le projet</button>
                                 </form> 
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <img class="img-projet" src="assets/img/img_projets/img_projet_5.jpg"
-                                class="img-fluid rounded-3 shadow-lg" alt="IMAGE DU PROJET 3">
+                            <img class="img-projet img-fluid rounded-3 shadow-lg" src="assets/img/img_projets/img_projet_5.jpg"
+                                alt="IMAGE DU PROJET 3">
                         </div>
                     </div>
                 </div>
                 <div class="card mb-5 bg-light">
                     <div class="row">
                         <div class="col-md-6">
-                            <img class="img-projet image-992" src="assets/img/img_projets/img_projet_6.png"
-                                class="img-fluid rounded-3 shadow-lg" alt="IMAGE DU PROJET 6">
+                            <img class="img-projet img-fluid rounded-3 shadow-lg image-992" src="assets/img/img_projets/img_projet_6.png"
+                                alt="IMAGE DU PROJET 6">
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">
@@ -258,7 +258,7 @@
                                 <p class="card-text">3) Utilisation d'un Token.</p>
                                 <p class="card-text">4) Pouvoir liker et disliker.</p>
                                 <p class="card-text">5) Les images effacées dans l'API sont effacées dans le dossier.</p>
-                                <form action=""  title="lien en cours de construction" target="_blank">
+                                <form title="lien en cours de construction" target="_blank">
                                     <button type="button" class="btn-projets rounded" disabled>Voir le projet</button>
                                 </form>  
                             </div>
@@ -281,24 +281,24 @@
                             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img class="img-projet image-992"
+                                        <img class="img-projet d-block w-100 image-992"
                                             src="assets/img/img_projets/img_projet_7/img_projet_7.jpg"
-                                            class="d-block w-100" alt="image du projet numéro 7">
+                                            alt="image du projet numéro 7">
                                     </div>
                                     <div class="carousel-item active">
-                                        <img class="img-projet"
+                                        <img class="img-projet d-block w-100"
                                             src="assets/img/img_projets/img_projet_7/img_projet_7-1.jpg"
-                                            class="d-block w-100" alt="image du projet numéro 7">
+                                            alt="image du projet numéro 7">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="img-projet"
+                                        <img class="img-projet d-block w-100"
                                             src="assets/img/img_projets/img_projet_7/img_projet_7-2.jpg"
-                                            class="d-block w-100" alt="image du projet numéro 7">
+                                            alt="image du projet numéro 7">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="img-projet"
+                                        <img class="img-projet d-block w-100"
                                             src="assets/img/img_projets/img_projet_7/img_projet_7-3.jpg"
-                                            class="d-block w-100" alt="image du projet numéro 7">
+                                            alt="image du projet numéro 7">
                                     </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button"
@@ -340,24 +340,24 @@
                             <h5 class="card-title text-center"><strong>FORMATIONS</strong></h5>
                             <div class="d-flex justify-content-center align-items-center gap-4">
                                     <img src="assets/img/Logos/Mewo.ico" class="logos card-img-top rounded-3 shadow-lg" alt="logo Mewo">
-                                <p class="card-text"><br /><span class="p-italic">Septembre 2023-Juillet 2024</span> <br />Développeurs full Stack - MEWO METZ <br />Contrat de professionnalisation en vue de l’obtention d’un titre certifié RNCP niveau bac+3</p>
+                                <p class="card-text"><br><span class="p-italic">Septembre 2023-Juillet 2024</span> <br>Développeurs full Stack - MEWO METZ <br>Contrat de professionnalisation en vue de l’obtention d’un titre certifié RNCP niveau bac+3</p>
                             </div>
                             <div class="d-flex justify-content-center align-items-center gap-3">
                                 <h3 class="titre-qui2 text-uppercase"><em>temps avant d'entrer en formation</em></h3>
-                                <img id="decompte" src="http://s.mmgo.io/t/CfFN" alt="motionmailapp.com" />   
+                                <img id="decompte" src="http://s.mmgo.io/t/CfFN" alt="motionmailapp.com">   
                             </div>
                             <hr class="ligne">
                             <div class="d-flex justify-content-center align-items-center gap-4">
                                 <img src="assets/img/Logos/openClassrooms.ico" class="logos card-img-top rounded-3 shadow-lg" alt="logo OpenClassrooms">                          
-                                <p class="card-text"><span class="p-italic">Octobre 2021-Octobre 2022</span><br />
+                                <p class="card-text"><span class="p-italic">Octobre 2021-Octobre 2022</span><br>
                                     Développeur web - OPENCLASSROOMS
                                     Obtention du titre certifié RNCP niveau bac+2</p>
                             </div>
                             <hr class="ligne">
                             <div class="d-flex justify-content-center align-items-center gap-4">
                                 <img src="assets/img/Logos/afpa.ico" class="logos card-img-top rounded-3 shadow-lg" alt="logo AFPA">                          
-                                <p class="card-text"><span class="p-italic">Mars 2020-Juillet 2021</span><br />
-                                    VAE Assistant ressources humaines – AFPA THIONVILLE<br />
+                                <p class="card-text"><span class="p-italic">Mars 2020-Juillet 2021</span><br>
+                                    VAE Assistant ressources humaines – AFPA THIONVILLE<br>
                                     Obtention du titre CCP 002822 de niveau 5 (bac+2)
                                     Titre complet : Contribuer au développement des RH</p>
                             </div>
@@ -365,14 +365,14 @@
                     </div> 
                     <div class="row row-cols-1 col-md-6">
                         <div class="carte-cv mb-5 bg-light d-flex flex-column justify-content-center">
-                            <h5 class="card-title text-center"><strong>COMPÉTENCES ACQUISES</strong></h5><br />
+                            <h5 class="card-title text-center"><strong>COMPÉTENCES ACQUISES</strong></h5><br>
                             <div class="d-flex justify-content-center align-items-center gap-4">
                                 <img src="assets/img/Logos/html.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo HTML" title="HTML 5">
                                 <img src="assets/img/Logos/css.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo CSS" title="CSS 3">                                 
                                 <img src="assets/img/Logos/javascript.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo javascript" title="Javascript">                               <img src="assets/img/Logos/visual-studio-code.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo Microsoft Visual studio code" title="Microsoft Visual Studio Code">    
                             </div>
-                            <hr class="ligne"><br />
-                            <h5 class="card-title text-center"><strong>COMPÉTENCES ÉTUDIÉES</strong></h5><br />
+                            <hr class="ligne"><br>
+                            <h5 class="card-title text-center"><strong>COMPÉTENCES ÉTUDIÉES</strong></h5><br>
                             <div class="d-flex flex-column justify-content-center gap-3">
                                 <div class="d-flex justify-content-center align-items-center gap-3">
                                     <img src="assets/img/Logos/react.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo react" title="React">
@@ -388,15 +388,15 @@
                                 </div>                    
                                     <hr class="ligne">
                             </div>
-                                <h5 class="card-title text-center"><strong>LOGICIELS / ENVIRONNEMENT</strong></h5><br />
+                                <h5 class="card-title text-center"><strong>LOGICIELS / ENVIRONNEMENT</strong></h5><br>
                             <div class="d-flex justify-content-center align-items-center gap-4">
                                 <img src="assets/img/Logos/office2021.jpg" class="office card-img-top rounded-3 shadow-lg" alt="logo suite office 2021">
                                 <img src="assets/img/Logos/adobe-premiere-element.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo Adobe Première Element">                                 
                             </div>
-                            <hr class="ligne"><br /> 
+                            <hr class="ligne"><br> 
                             <div class="d-flex justify-content-center align-items-center gap-4">                        
                                 <h5 class="card-title text-center"><strong>LANGUES</strong></h5>
-                            </div><br />
+                            </div><br>
                             <div class="comp1">
                                 <p>Français</p>
                                 <p>100%</p>
@@ -414,19 +414,19 @@
                             <h5 class="card-title text-center"><strong>EXPÉRIENCES PROFESSIONNELLES</strong></h5>
                             <div class="d-flex justify-content-center align-items-center gap-4">
                                 <img src="assets/img/Logos/openClassrooms.ico" class="logos card-img-top rounded-3 shadow-lg" alt="logo OpenClassrooms">
-                                <p class="card-text"><br /><span class="p-italic">Octobre 2021-Octobre 2022</span><br />En tant qu’étudiant chez OPENCLASSROOMS <br /><br /><span class="p-italic">Réalisations de 6 projets d'études versionnés Github :</span><br /><br />
-                                    - Transformer une maquette en site Web <span class="p-italic">(HTML, CSS)</span> <br />- Dynamiser une page web avec des animations <span class="p-italic">CSS</span><br />
-                                    - Optimiser un site web existant (projet <span class="p-italic">SEO</span>)<br />
-                                    - Construire un site e-commerce <span class="p-italic">(javascript)</span> <br />
-                                    -Programmation d'une API sécurisée pour une application gastronomique <span class="p-italic">(angular)</span><br />
+                                <p class="card-text"><br><span class="p-italic">Octobre 2021-Octobre 2022</span><br>En tant qu’étudiant chez OPENCLASSROOMS <br><br><span class="p-italic">Réalisations de 6 projets d'études versionnés Github :</span><br><br>
+                                    - Transformer une maquette en site Web <span class="p-italic">(HTML, CSS)</span> <br>- Dynamiser une page web avec des animations <span class="p-italic">CSS</span><br>
+                                    - Optimiser un site web existant (projet <span class="p-italic">SEO</span>)<br>
+                                    - Construire un site e-commerce <span class="p-italic">(javascript)</span> <br>
+                                    -Programmation d'une API sécurisée pour une application gastronomique <span class="p-italic">(angular)</span><br>
                                     - Créer un réseau social d'entreprise <span class="p-italic">(React)</span></p>
                             </div>
-                            <br /><hr class="ligne"><br />
+                            <br><hr class="ligne"><br>
                             <div class="d-flex justify-content-center align-items-center gap-4">
                                 <img src="assets/img/Logos/VNF.png" class="logos card-img-top rounded-3 shadow-lg" alt="logo Voies Navigables de France">                          
-                                <p class="card-text"><span class="p-italic">Mars 1994-décembre 2020</span><br />VOIES NAVIGABLES DE FRANCE<br /><br />
-                                    Fonctionnaire dans un établissement publique. <br /> <span class="p-italic">2004-2020</span> – Assistant ressources humaines<br />
-                                    <span class="p-italic">1994-2004</span> – Agent à chef d’équipe principal</p><br />
+                                <p class="card-text"><span class="p-italic">Mars 1994-décembre 2020</span><br>VOIES NAVIGABLES DE FRANCE<br><br>
+                                    Fonctionnaire dans un établissement publique. <br> <span class="p-italic">2004-2020</span> – Assistant ressources humaines<br>
+                                    <span class="p-italic">1994-2004</span> – Agent à chef d’équipe principal</p><br>
                             </div>
                         </div>
                     </div>
@@ -440,8 +440,8 @@
                             - Enthousiaste - Empathique
                         </p>
                     </div>
-                    <br /><hr class="ligne"><br />
-                    <h5 class="card-title text-center"><strong>CENTRE D’INTÉRÊTS</strong></h5><br />
+                    <br><hr class="ligne"><br>
+                    <h5 class="card-title text-center"><strong>CENTRE D’INTÉRÊTS</strong></h5><br>
                     <div class="content-interet">
                         <div class="div-interet gap-4">
                             <figure class="interet">
@@ -478,7 +478,7 @@
                                 <img src="assets/img/Logos/sciences.jpg" alt="logo du magazine Sciences et Vies">
                                 <figcaption>sciences générales</figcaption>
                             </figure>                                    
-                        </div><br />
+                        </div><br>
                         <p class="p-small"><sup>1 </sup>Association créée et gérée par mon épouse et moi-même.</p>
                         <p class="p-small"><sup>2 </sup>J'ai joué en compétition au niveau régionnal.</p>                                
                     </div>
@@ -492,21 +492,19 @@
     <!-- section contact -->
     <section id="contact" class="order-form py-5">
         <div class="container">
-
             <h2 class="title_contact merriweather text-center text-light mb-4">CONTACT</h2>
             <div class="bg-contact p-2 d-flex flex-column justify-content-center rounded">
-                <p class="merriweather text-center text-black mb-1 py-1 p-contact">Si vous souhaitez me contacter, n'hésitez pas à m'envoyer un message en cliquant sur le lien ci-dessous.
-                <p class="merriweather text-center p-contact">
-                    <strong>
-                        <a href="mailto:florentgerard@fgdeveloppement.com?subject=n'oubliez pas l'objet !">florentgerard@fgdeveloppement.com</a>
-                    </strong>
-                </p>
-
+                <p class="merriweather text-center text-black mb-1 py-1 p-contact">Si vous souhaitez me contacter, n'hésitez pas à m'envoyer un message en cliquant sur le lien ci-dessous.</p>
+                    <p class="merriweather text-center p-contact">
+                        <strong>
+                            <a href="mailto:florentgerard@fgdeveloppement.com?subject=n'oubliez-pas-l'objet-!">florentgerard@fgdeveloppement.com</a>
+                        </strong>
+                    </p>
             </div>
 
             <!-- Cette partie ne sera active que quand je maîtriserai l'envoi de données des formulaires-->
 
-            <!-- <br />
+            <!-- <br>
             <form class="merriweather mb-2" action="post">
                 <div class="row">
                     <div class="col-md-6 col-sm">
@@ -571,15 +569,14 @@
                 <button class="btn btn-primary" type="submit">envoyer</button>
                 <p class="form-text text-warning fw-bold"><strong>*</strong>L'astérix désigne les champs
                     obligatoires.
-                <p> <br />
+                <p> <br>
                 <p class="form-text text-danger fw-bold">Vos données ne seront jamais partagées
                     avec des tiers. (voir mentions légales ci-dessous)</p> -->
-            </div>
         </div>
     </section>
 
     <footer id="footer">
-        <div class="footer-liens text-light py-5">
+        <div class="footer-liens text-light py-5 redressed">
             <div class="fg-footer d-flex justify-content-evenly align-items-center">
                 <p class="fw-bold fs-3"><a class="github nav-link" href="https://github.com/PapaG57" target="_blank"><i
                             class="bi bi-github"></i>
@@ -627,12 +624,9 @@
     </footer>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Redressed&display=swap');
-    </style>
     <script src="assets/js/zoom.js"></script>
     <script src="assets/js/lightbox.js"></script>
-    <script type="text/javascript" src="assets/js/mentions.js"></script>
+    <script src="assets/js/mentions.js"></script>
 </body>
 
 </html>
