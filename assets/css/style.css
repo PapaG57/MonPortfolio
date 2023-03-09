@@ -213,7 +213,7 @@ figcaption {
 
 /* ======== comportement section CV ======== */
 #cv {
-    height: 1850px;
+    height: 1900px;
 }
 
 .card-blur {
@@ -487,25 +487,14 @@ background-size: cover;
     .fs-4 {
         font-size: 1rem!important;
     }
-
-    .fs-2 {
-        font-size: 20px!important;
-    }
-
-    .container-fluid {
-        padding-left: 0;
-        padding-right: 0;
-        justify-content: flex-start!important;
-    }
 }
+
 
 @media screen and (max-width: 576px) {
     
-    .container-fluid {
-        padding-left: 0;
-        padding-right: 0;
-        justify-content: flex-start!important;
-    }
+.navbar>.container-fluid {
+    
+}
 
     .collapse {
         background-color: #4B8;
@@ -546,10 +535,6 @@ background-size: cover;
     }
 
     .fs-3 {
-        font-size: 15px!important;
-    }
-
-    .fs-2 {
         font-size: 15px!important;
     }
 
