@@ -484,9 +484,18 @@ background-size: cover;
 }
 
 /* ======== format responsive ======== */
+/* ======== format tablette ======== */
 /* ======== page index.html ======== */
 
 @media screen and (max-width: 992px) {
+    .banner {
+        height: auto;
+    }
+
+    .nostaliques {
+        justify-content: flex-start!important;
+        gap: 80px;
+    }
 
     .fs-4 {
         font-size: 1rem!important;
@@ -519,7 +528,8 @@ background-size: cover;
     }
 
     #quisuisje {
-        height: 1700px;
+        border-top: none;
+        height: auto;
     }
 
     #cv {
@@ -537,8 +547,9 @@ background-size: cover;
     }
 }
 
+/* ======== format mobile ======== */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 385px) {
     
     .fg-navbar {
         width: 400px!important;
@@ -552,25 +563,29 @@ background-size: cover;
         font-size: 15px!important;
     }
 
-    .banner {
-        height: 1350px;
-    }
-
-    #quisuisje {
-        height: 3000px;
-    }
-
     .img-projet {
         width: 300px;
         height: 300px;
     }
 
     #cv {
-        height: 3700px;
+        height: 3900px;
     }
 
     .card-text {
         font-size: .75rem;
+    }
+
+    .carte-cv {
+        text-shadow: none;
+    }
+
+    .titre-qui2 {
+        display: none;
+    }
+
+    #decompte {
+        display: none;
     }
 
     .ligne {
@@ -612,6 +627,7 @@ background-size: cover;
 }
 
 /* ======== format responsive ======== */
+/* ======== format tablette ======== */
 /* ========  page rapport ======== */
 
 @media screen and (max-width: 992px) {
@@ -625,663 +641,9 @@ background-size: cover;
     }
 }
 
-@media screen and (max-width: 576px)  {
+/* ======== format mobile ======== */
 
-    .row {
-        margin-left: 0!important;  
-    }
-
-    .fs-3 {
-        font-size: 15px!important;
-    }
-
-    .titre-rapports {
-        font-size: 1.2rem;
-    }
-
-    .my-5 {
-        margin-top: 3rem!important;
-        margin-bottom: 0!important;
-    }
-
-    .py-5 {
-        padding-top: 3rem!important;
-        padding-bottom: 1rem!important;
-    }
-
-    .collapse {
-        background-color: #4B8;
-    }
-}
-
-/* ======== comportement du body ======== */
-body {
-    font-family: "Merriweather", serif;
-    height: auto;
-    margin: 0;
-    padding: 0;
-}
-
-/* ======== comportement des images ======== */
-.fg-img {
-    width: 400px;
-    height: 300px;
-    border-radius: 50%;
-}
-
-.img-projet {
-    width: 600px;
-    height: 400px;
-}
-
-.img-car {
-    width: auto;
-    height: auto;
-}
-
-/* ======== comportement des H1 H2 p span et ligne de séparation ======== */
-h1,
-h2,
-p {
-    font-size: 1.2rem;
-    font-weight: 400;
-}
-
-.p-small {
-    font-size: 0.8rem;
-}
-
-.p-justify {
-    text-align: justify ;
-}
-
-.p-italic {
-    font-weight: bold;
-    font-style: italic;
-}
-
-.p-presentation {
-    text-align: justify;
-    font-size: 1.1rem;
-    font-weight: 400;
-    background-color: transparent;
-    backdrop-filter: blur(30px);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.ligne {
-    margin: 10px;
-    width: 580px;
-    border: solid 2px;
-}
-
-/* ======== chargement polices ======== */
-.redressed {
-    font-family: "Redressed", cursive;
-}
-
-.merriweather {
-    font-family: "Merriweather", serif;
-}
-
-/* ======== comportement de fg-navbar ======== */
-
-.fg-navbar {
-    background-color: var(--bs-teal);
-    border-bottom: 1px solid var(--bs-blue);
-    height: 80px;
-    z-index: 1;
-}
-
-/* ======== comportement de la navbar ======== */
-.fg-navbar .nav-link {
-    border-bottom: 2px solid transparent;
-    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
-    color: #fff;
-}
-
-.fg-navbar .nav-link:hover {
-    padding-bottom: 20px;
-    border-bottom-color: var(--bs-blue);
-    color: var(--bs-blue);
-}
-
-.text-bg-var {
-    color: var(--bs-blue);
-}
-
-/* ======== comportement du bouton "me contacter" fg-navbar ======== */
-.btn-order {
-    color: var(--bs-blue);
-    border-color: var(--bs-blue);
-    transition: 0.5s;
-}
-
-.btn-order:hover,
-.btn-order:active {
-    color: #fff;
-    background-color: var(--bs-blue);
-}
-
-/* ======== comportement de la section accueil ======== */
-.banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,
-                0,
-                0,
-                0.5)), url('../img/hd_pictures/computer_coffee.jpg') center center fixed no-repeat;
-    height: 800px;
-    background-size: cover;
-}
-
-.banner .banner-desc {
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #fff;
-}
-
-/* ======== comportement du menu fg-menu ======== */
-.fg-menu {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,
-                0,
-                0,
-                0.5)), url('../img/hd_pictures/computer_work_3.jpg') center center fixed no-repeat;
-    height: 1200px;
-    background-size: cover;
-}
-
-
-/* ======== comportement section qui suis-je ? ======== */
-
-#quisuisje {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,
-                0,
-                0,
-                0.5)), url('../img/hd_pictures/computer_work_2.jpg') center center fixed no-repeat;
-    height: 1500px;
-    background-size: cover;
-    color: #fff;
-    border-top: solid 80px #4fc6eb;
-}
-
-strong {
-    color: #4fc6eb;
-}
-
-.nostaliques {
-    background-color: var(--bs-teal);
-    opacity: 85%;
-}
-
-figure {
-    border: thin #ffffff solid;
-    display: flex;
-    flex-flow: column;
-}
-
-.amstrad,
-.TI994A {
-    max-width: 600px;
-    max-height: 300px;
-}
-
-figcaption {
-    background-color: #222;
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
-}
-
-.titre-qui {
-    font-size: 1.5rem;
-    font-family: "Meriweather", serif;
-    font-weight: 800;
-}
-
-.titre-qui2 {
-    font-size: 0.8rem;
-    font-weight: 800;
-}
-
-.compteur {
-    max-width: 400px;
-}
-
-/* ======== comportement section portfolio ======== */
-
-.btn-projets {
-    font-family: "Merriweather", serif;
-    font-size: 15px;
-    margin-top: 25px;
-    width: 180px;
-    height: 50px;
-    color: #fff;
-    background-color: var(--bs-blue);
-    border: 0;
-    text-transform: uppercase;
-}
-
-.btn-projets:hover {
-    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
-}
-
-
-/* ======== comportement section CV ======== */
-#cv {
-    height: 1900px;
-}
-
-.card-blur {
-    margin: 0 40px 0 40px;
-}
-
-.logos {
-    width: 40px;
-    height: 40px;
-}
-
-.office {
-    width: 130px;
-    height: 50px;
-}
-
-.a-decompte {
-    text-decoration: none;
-    color: #000;
-}
-
-#decompte {
-    width: 220px;
-    height: 70px;
-}
-
-.carte-cv {
-    background-color: #4fc6eb;
-    border-radius: 10px;
-    border:  solid 4px;
-    border-color: #4B8;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    width: auto;
-    height: 700px;
-}
-
-/* ======== comportement section CV - langues ======== */
-.comp1{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.c30{
-    width: 30%;
-    background-color: #4B8;
-    border-radius: 5px;
-}
-
-.c100{
-    width: 100%;
-    background-color: #4B8;
-    border-radius: 5px;
-}
-
-.conteneur-barre{
-    flex: 0 0 60%;
-    border-radius: 5px;
-    background-color: grey;
-    border-bottom: 1px ridge grey;
-}
-
-.barre{
-    display: block;
-    height: 100%;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.conteneur-barre1{
-    flex: 0 0 100%;
-    height: 0.5em;
-    margin-bottom: 0.25em;
-    border-radius: 5px;
-    background-color: grey;
-}
-
-
-/* ======== comportement section CV - Centres d'intérêt ======== */
-.content-interet {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.div-interet {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.interet {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.interet img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 15px #555;
-}
-
-/* ======== comportement section contact ======== */
-#contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,
-                0,
-                0,
-                0.5)), url('../img/others_img/finger-2956974__340.jpg') center center fixed no-repeat;
-    height: 750px;
-    background-size: cover;
-    color: #fff;
-    border-top: solid 80px #4fc6eb;
-}
-
-.title_contact {
-    font-size: 2.5rem;
-}
-
-.bg-contact {
-    background-color: #fff;
-}
-
-/* ======== comportement footer ======== */
-
-#footer {
-    background-color: #4fc6eb;
-
-}
-
-.copyright {
-    font-size: .8rem;
-}
-
-.footer-logo {
-    width: 120px;
-    height: 50px;
-}
-
-.footer-liens {
-    padding-top: 30px!important;
-    padding-bottom: 0!important;
-}
-
-.github:hover {
-    color: var(--bs-blue);
-}
-
-.linkedin:hover {
-    color: var(--bs-blue);
-}
-
-.mentions:hover {
-    color: var(--bs-blue);
-    cursor: pointer;
-}
-
-#div-mentions-to-open {
-    display: none;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    font-family: "Redressed", cursive;
-    font-size: 15px;
-    font-weight: normal;
-    text-align: center;
-    z-index: 2;
-}
-
-#div-mentions-to-open > #mentions-text {
-    background-color: #dedede;
-    width: 80%;
-    max-width: 800px;
-    max-height: 90%;
-    color: black;
-    text-align: left;
-    padding: 10px;
-    border: 2px #fff solid;
-    border-radius: 10px;
-    margin: 0 0 5px 0;
-}
-
-#div-mentions-to-open > #mentions-text > #mentions-title {
-    text-align: center;
-}
-
-#div-mentions-to-open > #mentions-close {
-    cursor: pointer;
-    width: 100px;
-    background: #4B8;
-    color: #fff;
-    font-size: 20px;
-    font-family: "Redressed", cursive;
-    border: 2px #fff solid;
-    border-radius: 10px;
-    margin: 0;
-    transition: 0.5s;
-}
-
-#div-mentions-to-open > #mentions-close:hover {
-    background: #4B8;
-    color: #000;
-    border: 2px #000 solid;
-    }
-
-/* ======== comportement page rapport ======== */
-#rapports-lighthouse {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,
-    0,
-    0,
-    0.8)), url('../img/hd_pictures/2-computers-work.jpg') center center fixed no-repeat;
-height: auto;
-background-size: cover;
-}
-
-#rapports-w3c {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,
-    0,
-    0,
-    0.8)), url('../img/hd_pictures/informatique_code_2.jpg') center center fixed no-repeat;
-height: auto;
-background-size: cover;    
-}
-
-.titre-rapports {
-    color: #fff;
-    font-weight: bold;
-    padding: 20px;
-    background-color: #4fc6eb;
-    border-radius: 10px;
-    border:  solid 4px;
-    border-color: #4B8;
-    text-shadow: black 0.1em 0.1em 0.2em;
-}
-
-.carte-after {
-    background-color: #4fc6eb;
-    border-radius: 10px;
-    border:  solid 4px;
-    border-color: #4B8;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    width: auto;
-    height: 750px;
-}
-
-.img-rapport {
-    padding: 10px;
-    width: 100%;
-}
-
-.btn-modal {
-    border: var(--bs-blue);
-    width: 100%;
-}
-
-.modal-content {
-    background-color: #4B8;
-    border:  solid 4px;
-    color: #fff;
-}
-
-/* ======== format responsive ======== */
-/* ======== page index.html ======== */
-
-@media screen and (max-width: 992px) {
-
-    .fs-4 {
-        font-size: 1rem!important;
-    }
-
-    .button-992 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .image-992 {
-        width: 470px;
-    }
-
-    .competences-992 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .ligne {
-        width: 400px;
-    }
-
-    .card-text {
-        font-size: .8rem;
-    }
-
-    .p-pres-992 {
-        font-size: .8rem;        
-    }
-
-    #quisuisje {
-        height: 1700px;
-    }
-
-    #cv {
-        height: 1950px;
-    }
-
-    .fg-img {
-        width: 300px;
-        height: 250px;
-    }
-
-    .interet img {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-
-@media screen and (max-width: 576px) {
-    
-    .fg-navbar {
-        width: 400px!important;
-    }
-
-    .collapse {
-        background-color: #4B8;
-    }
-
-    .fs-2 {
-        font-size: 15px!important;
-    }
-
-    .banner {
-        height: 1350px;
-    }
-
-    #quisuisje {
-        height: 3000px;
-    }
-
-    .img-projet {
-        width: 300px;
-        height: 300px;
-    }
-
-    #cv {
-        height: 3700px;
-    }
-
-    .card-text {
-        font-size: .75rem;
-    }
-
-    .ligne {
-        width: 300px;
-    }
-
-    .div-interet {
-        gap: 5px!important;
-    }
-
-    #contact {
-        height: 500px;
-    }
-
-    .cont-footer {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: #4fc6eb;
-    }
-
-    .footer-logo {
-        width: 150px;
-        height: 60px;
-    }
-
-    .footer-h2 {
-        font-size: 0.8rem;
-        background-color: #4fc6eb;
-    }
-    
-    .p-contact {
-        font-size: .7rem;
-    }
-
-    .p-mention {
-        font-size: .8rem;
-    }
-}
-
-/* ======== format responsive ======== */
-/* ========  page rapport ======== */
-
-@media screen and (max-width: 992px) {
-
-    .fs-4 {
-        font-size: 1rem!important;
-    }
-
-    .fs-2 {
-        font-size: 20px!important;
-    }
-}
-
-@media screen and (max-width: 576px)  {
+@media screen and (max-width: 385px)  {
 
     .row {
         margin-left: 0!important;  
