@@ -589,11 +589,20 @@ background-size: cover;
     }
 
     .ligne {
-        width: 300px;
+        width: auto;
     }
 
     .div-interet {
         gap: 5px!important;
+    }
+
+    .interet img {
+        width: 30px;
+        height: 30px;
+    }
+
+    figcaption {
+        padding: 0;
     }
 
     #contact {
