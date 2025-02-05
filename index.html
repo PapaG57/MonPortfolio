@@ -1,500 +1,874 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/Logos/favicon.ico">
-    <script src="https://kit.fontawesome.com/b3e18aa31a.js" crossorigin="anonymous"></script>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="assets/css/lightbox.css" rel="stylesheet">
-    <style>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="shortcut icon" type="image/x-icon"
+            href="/assets/img/Logos/favicon.ico">
+        <script src="https://kit.fontawesome.com/b3e18aa31a.js"
+            crossorigin="anonymous"></script>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="assets/css/lightbox.css" rel="stylesheet">
+        <style>
         @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Redressed&display=swap');
     </style>
 
-    <title>Mon Portfolio</title>
-</head>
+        <title>Mon Portfolio</title>
+    </head>
 
-<body>
-    <nav class="fg-navbar navbar navbar-expand-lg position-fixed navbar-dark w-100">
-        <div class="container-fluid">
-            <a class="navbar-brand text-uppercase fw-bolder fs-2 mx-4 py-3 redressed"
-                title="© fgdeveloppement 2023 - Tous droits réservés">mon
-                portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 redressed fs-4">
-                    <li class="nav-item pe-4">
-                        <a class="nav-link active" aria-current="page" href="#accueil" title="Retour à l'accueil">Accueil</a>
-                    </li>
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" href="#quisuisje" title="Connaître mon histoire de vie">Qui suis-je ?</a>
-                    </li>
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" href="#portfolio" title="Voir mes projets réalisés">Mon Portfolio</a>
-                    </li>
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" href="#cv" title="CV interactif">Mon CV</a>
-                    <li class="nav-item pe-4">
-                        <a class="btn btn-order btn-lg rounded-0" href="#contact">Me contacter</a>
-                    </li>
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" href="#footer" title="Accès à mon Linkedin & Github">Autres liens</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- section accueil -->
-    <section id="accueil">
-        <div class="banner pt-5">
-            <div class="container my-5 py-3">
-                <div class="row">
-                    <div class="row row-cols-1 col-md-4 my-4">
-                        <img class="fg-img" src="assets/img/others_img/Photo-CV-07-12-22.jpg" alt="Portrait de l'auteur">
-                    </div>
-                    <div class="row-cols-1 col-md-8 d-flex justify-content-center align-items-center my-5">
-                        <p class="p-presentation text-light">Bonjour,<br><br> je me nomme Florent GERARD et je vis dans la région
-                            Grand-Est, dans la zone des 3 frontières  (Luxembourg - Belgique - Allemagne)<br><br>Á la
-                            suite d'une
-                            reconversion
-                            professionnelle, j'ai passé mon diplôme de <strong>développeur web</strong>, (niveau bac+2) que
-                            j'ai
-                            obtenu en octobre 2022. <br><br> Sur ce site, je vous présente mon CV et mes projets
-                            réalisés
-                            lors
-                            de ma
-                            formation chez OpenClassrooms.<br><br>
-                            Si vous souhaitez connaître en détail mes motivations et mon parcours, je vous invite à
-                            poursuivre dans la rubrique "Qui suis-je ?"
-                            <br><br>
-                            <sub><em>(Site réalisé par mes soins à l'aide, entre autre, de bootstrap
-                                    5.)</em></sub>
-                        </p>
+    <body>
+        <nav
+            class="fg-navbar navbar navbar-expand-lg position-fixed navbar-dark w-100">
+            <div class="container-fluid">
+                <a
+                    class="navbar-brand text-uppercase fw-bolder fs-2 mx-4 py-3 redressed"
+                    title="© fgdeveloppement 2023 - Tous droits réservés">mon
+                    portfolio</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 redressed fs-4">
+                        <li class="nav-item pe-4">
+                            <a class="nav-link active" aria-current="page"
+                                href="#accueil"
+                                title="Retour à l'accueil">Accueil</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link" href="#quisuisje"
+                                title="Connaître mon histoire de vie">Qui
+                                suis-je ?</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link" href="#portfolio"
+                                title="Voir mes projets réalisés">Mon
+                                Portfolio</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link" href="#cv"
+                                title="CV interactif">Mon CV</a>
+                            <li class="nav-item pe-4">
+                                <a class="btn btn-order btn-lg rounded-0"
+                                    href="#contact">Me contacter</a>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="#footer"
+                                    title="Accès à mon Linkedin & Github">Autres
+                                    liens</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </nav>
 
-    <!-- section Qui suis-je ? -->
-    <section id="quisuisje" class="quisuisje merriweather py-3">
-        <div class="container py-5">
-            <div class="row">
-                <div class="row row-cols-1 col-md-7">
-                    <h3 class="titre-qui text-uppercase text-bg-light">Mon histoire numérique...</h3>
-                    <br>
-                    <p class="p-presentation">Depuis la création des ordinateurs personnels ou PC (<strong>P</strong>ersonnal
-                        <strong>C</strong>omputer,
-                        et non je ne suis pas un dinosaure), j'étais passionné par cette nouvelle technologie qui
-                        s'ouvrait à moi.
-                        Les joies des tous premiers ordinateurs sans disque dur, voir sans floppy disc mais des cassettes
-                        audios qui devenaient des cassettes numériques ! <br> <br> J'ai donc fait mes premiers pas
-                        avec un
-                        <strong>TI 99 4A</strong> (Texas Intrument) qui se branchait derrière la télévision avec une
-                        prise
-                        péritel.
-                        La programmation en basic était fastidieuse (surtout en autodidacte) mais sur un grand
-                        téléviseur, c'était plutôt cool.
-                        Malheureusement, je dépendais du programme télé de mes parents, et pour eux, cette technologie
-                        se
-                        limitait à une excentricité plutôt qu'à un produit d'avenir, ce dont j'étais vraiment
-                        persuadé ! Et l'avenir m'a donné raison.<br> Puis je me suis acheté mon ordinateur avec mes
-                        premiers salaires : un <strong>AMSTRAD CPC 6128</strong> Quelle belle aventure que j'ai eu à
-                        programmer en basic avec cet outil-là, même s'il n'y avait toujours pas de disque dur ! C'était
-                        toute une époque...<br> <br> Cependant, comme il n'y avait pas d'écoles
-                        d'informatique comme aujourd'hui et loin de toutes villes qui auraient pu me faire évoluer
-                        dans ce domaine, j'ai donc continué de faire de l'informatique, toujours en autodidacte (montage
-                        de PC, réseaux, création de pages web). Á mon ancien poste, j'avais souvent le rôle de
-                        correspondant
-                        informatique local. Comme vous l'avez certainement constaté, je n'ai jamais réellement abandonné
-                        l'informatique car c'est vraiment une
-                        passion ! <br> <br> Après 27 ans chez Voies Navigables de France, changement radical ! j'ai
-                        eu
-                        l'opportunité de faire une reconversion professionnelle. Changement de départements, je suis
-                        devenu un fonctionnaire en
-                        disponibilité. J'ai profité de ce temps pour intégrer l'école d'informatique,
-                        <strong>OpenClassrooms</strong> et j'ai obtenu mon diplôme de développeur web, titre RNCP de
-                        niveau Bac+2. J'avoue
-                        que je ne croyais pas réussir... mais c'était sans compter sur les encouragements de mon
-                        épouse, de mes enfants, et bien sûr, de mon mentor, Oumar Soumaré, qui a su me donner la force
-                        en moi nécessaire pour réussir. Je finirai cette missive par
-                        l'équipe d'OpenClassrooms qui m'a beaucoup aidé et également sans qui je n'aurai pas pu réussir. Un grand
-                        merci à tous ! <br> <br> prochaine étape : Développeur web full stack. J'espère que ça ne
-                        sera pas trop ambitieux mais j'y crois, alors pourquoi pas ?<br> <br> En attendant, je vous
-                        invite à voir la suite...
-                    </p>
-                </div>
-                <div
-                    class="nostaliques row-cols-1 col-md-5 d-flex flex-column justify-content-sm-evenly align-items-center p-4">
-                    <h3 class="titre-qui text-uppercase text-bg-light">Le coin des nostalgiques</h3>
-                    <figure>
-                        <img class="TI994A" src="assets/img/others_img/TI_99_4A.jpg" alt="ordinateur AMSTRAD CPC 6128"
-                            title="Ordinateur TI 99 4A">
-                        <figcaption>Texas Instrument : le TI 99 4A</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="amstrad" src="assets/img/others_img/AMSTRAD-CPC-6128.jpg"
-                            alt="ordinateur AMSTRAD CPC 6128" title="AMSTRAD CPC 6128 couleur et Monochrome">
-                        <figcaption>AMSTRAD CPC 6128 Monochrome (à gauche) et couleur (à droite)</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- section portfolio -->
-    <section id="portfolio" class="available merriweather py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="card mb-5 bg-light">
-                    <div class="row">
-                        <div class="row row-cols-1 col-md-6">
-                            <img class="img-projet img-fluid rounded-3 shadow-lg" src="assets/img/img_projets/img_projet_2.png" alt="IMAGE DU PROJET 2">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h5 class="card-title">Projet n°2</h5>
-                                <p class="card-text">Dans ce projet, j'étais chargé de créer un prototype de page web en intégrant une maquette en HTML et CSS.</p>
-                                <form action="https://papag57.github.io/P2-Dev-Web-Maquette/"  target="_blank">
-                                    <button class="btn-projets rounded" type="submit">Voir le projet</button>
-                                </form>
+            <!-- section accueil -->
+            <section id="accueil">
+                <div class="banner pt-5">
+                    <div class="container my-5 py-3">
+                        <div class="row">
+                            <div class="row row-cols-1 col-md-4 my-4">
+                                <img class="fg-img"
+                                    src="assets/img/others_img/Photo-CV-07-12-22.jpg"
+                                    alt="Portrait de l'auteur">
+                            </div>
+                            <div
+                                class="row-cols-1 col-md-8 d-flex justify-content-center align-items-center my-5">
+                                <p
+                                    class="p-presentation text-light">Bonjour,<br><br>
+                                    je me nomme Florent GERARD et je vis dans la
+                                    région
+                                    Grand-Est, dans la zone des 3 frontières
+                                    (Luxembourg - Belgique - Allemagne)<br><br>Á
+                                    la
+                                    suite d'une
+                                    reconversion
+                                    professionnelle, j'ai passé mon diplôme de
+                                    <strong>développeur web</strong>, (niveau
+                                    bac+2) que
+                                    j'ai
+                                    obtenu en octobre 2022. <br><br> Sur ce
+                                    site, je vous présente mon CV et mes projets
+                                    réalisés
+                                    lors
+                                    de ma
+                                    formation chez OpenClassrooms.<br><br>
+                                    Si vous souhaitez connaître en détail mes
+                                    motivations et mon parcours, je vous invite
+                                    à
+                                    poursuivre dans la rubrique "Qui suis-je ?"
+                                    <br><br>
+                                    <sub><em>(Site réalisé par mes soins à
+                                            l'aide, entre autre, de bootstrap
+                                            5.)</em></sub>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-5 bg-light">
+            </section>
+
+            <!-- section Qui suis-je ? -->
+            <section id="quisuisje" class="quisuisje merriweather py-3">
+                <div class="container py-5">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h5 class="card-title">Projet n°3</h5>
-                                <p class="card-text">Dans ce projet, mon objectif était de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.</p>
-                                <p class="card-text">Ce projet devait être versionné sur Github avec des commits réguliers.</p>
-                                <p class="card-text">Il était aussi impératif d'y inclure des animations CSS comme le loading spinner entre autre. Je vous invite à aller sur le projet pour voir tous ces effets.</p>
-                                <form action="https://papag57.github.io/P3-Dev-Web-HoMyFood/"  target="_blank">
-                                    <button class="btn-projets rounded" type="submit">Voir le projet</button>
-                                </form>
-                            </div>
+                        <div class="row row-cols-1 col-md-7">
+                            <h3
+                                class="titre-qui text-uppercase text-bg-light">Mon
+                                histoire numérique...</h3>
+                            <br>
+                            <p class="p-presentation">Depuis la création des
+                                ordinateurs personnels ou PC
+                                (<strong>P</strong>ersonnal
+                                <strong>C</strong>omputer,
+                                et non je ne suis pas un dinosaure), j'étais
+                                passionné par cette nouvelle technologie qui
+                                s'ouvrait à moi.
+                                Les joies des tous premiers ordinateurs sans
+                                disque dur, voir sans floppy disc mais des
+                                cassettes
+                                audios qui devenaient des cassettes numériques !
+                                <br> <br> J'ai donc fait mes premiers pas
+                                avec un
+                                <strong>TI 99 4A</strong> (Texas Intrument) qui
+                                se branchait derrière la télévision avec une
+                                prise
+                                péritel.
+                                La programmation en basic était fastidieuse
+                                (surtout en autodidacte) mais sur un grand
+                                téléviseur, c'était plutôt cool.
+                                Malheureusement, je dépendais du programme télé
+                                de mes parents, et pour eux, cette technologie
+                                se
+                                limitait à une excentricité plutôt qu'à un
+                                produit d'avenir, ce dont j'étais vraiment
+                                persuadé ! Et l'avenir m'a donné raison.<br>
+                                Puis je me suis acheté mon ordinateur avec mes
+                                premiers salaires : un <strong>AMSTRAD CPC
+                                    6128</strong> Quelle belle aventure que j'ai
+                                eu à
+                                programmer en basic avec cet outil-là, même s'il
+                                n'y avait toujours pas de disque dur ! C'était
+                                toute une époque...<br> <br> Cependant, comme il
+                                n'y avait pas d'écoles
+                                d'informatique comme aujourd'hui et loin de
+                                toutes villes qui auraient pu me faire évoluer
+                                dans ce domaine, j'ai donc continué de faire de
+                                l'informatique, toujours en autodidacte (montage
+                                de PC, réseaux, création de pages web). Á mon
+                                ancien poste, j'avais souvent le rôle de
+                                correspondant
+                                informatique local. Comme vous l'avez
+                                certainement constaté, je n'ai jamais réellement
+                                abandonné
+                                l'informatique car c'est vraiment une
+                                passion ! <br> <br> Après 27 ans chez Voies
+                                Navigables de France, changement radical ! j'ai
+                                eu
+                                l'opportunité de faire une reconversion
+                                professionnelle. Changement de départements, je
+                                suis
+                                devenu un fonctionnaire en
+                                disponibilité. J'ai profité de ce temps pour
+                                intégrer l'école d'informatique,
+                                <strong>OpenClassrooms</strong> et j'ai obtenu
+                                mon diplôme de développeur web, titre RNCP de
+                                niveau Bac+2. J'avoue
+                                que je ne croyais pas réussir... mais c'était
+                                sans compter sur les encouragements de mon
+                                épouse, de mes enfants, et bien sûr, de mon
+                                mentor, Oumar Soumaré, qui a su me donner la
+                                force
+                                en moi nécessaire pour réussir. Je finirai cette
+                                missive par
+                                l'équipe d'OpenClassrooms qui m'a beaucoup aidé
+                                et également sans qui je n'aurai pas pu réussir.
+                                Un grand
+                                merci à tous ! <br> <br> prochaine étape :
+                                Développeur web full stack. J'espère que ça ne
+                                sera pas trop ambitieux mais j'y crois, alors
+                                pourquoi pas ?<br> <br> En attendant, je vous
+                                invite à voir la suite...
+                            </p>
                         </div>
-                        <div class="col-md-6">
-                            <img class="img-projet img-fluid rounded-3 shadow-lg" src="assets/img/img_projets/img_projet_3.jpg" alt="IMAGE DU PROJET 3">
+                        <div
+                            class="nostaliques row-cols-1 col-md-5 d-flex flex-column justify-content-sm-evenly align-items-center p-4">
+                            <h3
+                                class="titre-qui text-uppercase text-bg-light">Le
+                                coin des nostalgiques</h3>
+                            <figure>
+                                <img class="TI994A"
+                                    src="assets/img/others_img/TI_99_4A.jpg"
+                                    alt="ordinateur AMSTRAD CPC 6128"
+                                    title="Ordinateur TI 99 4A">
+                                <figcaption>Texas Instrument : le TI 99
+                                    4A</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="amstrad"
+                                    src="assets/img/others_img/AMSTRAD-CPC-6128.jpg"
+                                    alt="ordinateur AMSTRAD CPC 6128"
+                                    title="AMSTRAD CPC 6128 couleur et Monochrome">
+                                <figcaption>AMSTRAD CPC 6128 Monochrome (à
+                                    gauche) et couleur (à droite)</figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-5 bg-light">
+            </section>
+
+            <!-- section portfolio -->
+            <section id="portfolio" class="available merriweather py-5">
+                <div class="container py-5">
                     <div class="row">
-                        <div class="col-md-6">
-                            <img class="img-projet image-992 img-fluid rounded-3 shadow-lg" src="assets/img/img_projets/img_projet_4.jpg" alt="IMAGE DU PROJET 4">
+                        <div class="card mb-5 bg-light">
+                            <div class="row">
+                                <div class="row row-cols-1 col-md-6">
+                                    <img
+                                        class="img-projet img-fluid rounded-3 shadow-lg"
+                                        src="assets/img/img_projets/img_projet_2.png"
+                                        alt="IMAGE DU PROJET 2">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Projet n°2</h5>
+                                        <p class="card-text">Dans ce projet,
+                                            j'étais chargé de créer un prototype
+                                            de page web en intégrant une
+                                            maquette en HTML et CSS.</p>
+                                        <form
+                                            action="https://papag57.github.io/P2-Dev-Web-Maquette/"
+                                            target="_blank">
+                                            <button class="btn-projets rounded"
+                                                type="submit">Voir le
+                                                projet</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h5 class="card-title p-justify">Projet n°4</h5>
-                                <p class="card-text">Dans ce projet, je devais améliorer le SEO du site "la chouette agence". J'ai donc travaillé sur 3 points :</p>
-                                <p class="card-text">1) Analyse de l’état actuel de SEO du site fourni.</p>
-                                <p class="card-text">2) Amélioration du SEO du site.</p>
-                                <p class="card-text">3) Comparaison des résultats.</p>
-                                <p class="card-text p-justify">Je devais livrer les rapports d'analyse et d'optimisation ainsi que le code source final, et ce dernier devait passer les tests du W3C pour le HTML et le CSS</p>
-                                <div class="d-flex justify-content-between button-992">
-                                    <form action="https://papag57.github.io/P4-Dev-Web-La-Chouette-Agence_Avant/"  target="_blank">
-                                        <button class="btn-projets rounded" type="submit">projet avant</button>
-                                    </form>
-                                    <form action="https://papag57.github.io/P4-Dev-Web-La-Chouette-Agence/"  target="_blank">
-                                        <button class="btn-projets rounded" type="submit">projet après</button>
-                                    </form>
-                                    <form action="rapports.html">
-                                        <button class="btn-projets rounded" type="submit">Voir les rapports</button>
-                                    </form>
+                        <div class="card mb-5 bg-light">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Projet n°3</h5>
+                                        <p class="card-text">Dans ce projet, mon
+                                            objectif était de développer un site
+                                            100% mobile qui répertorie les menus
+                                            de restaurants gastronomiques.</p>
+                                        <p class="card-text">Ce projet devait
+                                            être versionné sur Github avec des
+                                            commits réguliers.</p>
+                                        <p class="card-text">Il était aussi
+                                            impératif d'y inclure des animations
+                                            CSS comme le loading spinner entre
+                                            autre. Je vous invite à aller sur le
+                                            projet pour voir tous ces
+                                            effets.</p>
+                                        <form
+                                            action="https://papag57.github.io/P3-Dev-Web-HoMyFood/"
+                                            target="_blank">
+                                            <button class="btn-projets rounded"
+                                                type="submit">Voir le
+                                                projet</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img
+                                        class="img-projet img-fluid rounded-3 shadow-lg"
+                                        src="assets/img/img_projets/img_projet_3.jpg"
+                                        alt="IMAGE DU PROJET 3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-5 bg-light">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img
+                                        class="img-projet image-992 img-fluid rounded-3 shadow-lg"
+                                        src="assets/img/img_projets/img_projet_4.jpg"
+                                        alt="IMAGE DU PROJET 4">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title p-justify">Projet
+                                            n°4</h5>
+                                        <p class="card-text">Dans ce projet, je
+                                            devais améliorer le SEO du site
+                                            "la chouette agence". J'ai donc
+                                            travaillé sur 3 points :</p>
+                                        <p class="card-text">1) Analyse de
+                                            l’état actuel de SEO du site
+                                            fourni.</p>
+                                        <p class="card-text">2) Amélioration du
+                                            SEO du site.</p>
+                                        <p class="card-text">3) Comparaison des
+                                            résultats.</p>
+                                        <p class="card-text p-justify">Je devais
+                                            livrer les rapports d'analyse et
+                                            d'optimisation ainsi que le code
+                                            source final, et ce dernier devait
+                                            passer les tests du W3C pour le HTML
+                                            et le CSS</p>
+                                        <div
+                                            class="d-flex justify-content-between button-992">
+                                            <form
+                                                action="https://papag57.github.io/P4-Dev-Web-La-Chouette-Agence_Avant/"
+                                                target="_blank">
+                                                <button
+                                                    class="btn-projets rounded"
+                                                    type="submit">projet
+                                                    avant</button>
+                                            </form>
+                                            <form
+                                                action="https://papag57.github.io/P4-Dev-Web-La-Chouette-Agence/"
+                                                target="_blank">
+                                                <button
+                                                    class="btn-projets rounded"
+                                                    type="submit">projet
+                                                    après</button>
+                                            </form>
+                                            <form action="rapports.html">
+                                                <button
+                                                    class="btn-projets rounded"
+                                                    type="submit">Voir les
+                                                    rapports</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-5 bg-light">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Projet n°5</h5>
+                                        <p class="card-text">Mon objectif était
+                                            de développer un site e-commerce de
+                                            vente de canapé. J'avais également
+                                            des impératifs :</p>
+                                        <p class="card-text">1) Installation du
+                                            backend pour l'utitlisation d'une
+                                            API.</p>
+                                        <p class="card-text">2) Utilisation d'un
+                                            token.</p>
+                                        <p class="card-text">3) Constitution
+                                            d'une page panier et de confirmation
+                                            (avec un numéro de validation).</p>
+                                        <p class="card-text">4) Sécurisation des
+                                            données dans le localstorage.</p>
+                                        <p class="card-text"><sub><em>NB : La
+                                                    partie HTML/CSS était déjà
+                                                    construite.</em></sub></p>
+                                        <form
+                                            title="lien en cours de construction"
+                                            target="_blank">
+                                            <button type="button"
+                                                class="btn-projets rounded"
+                                                disabled>Voir le projet</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img
+                                        class="img-projet img-fluid rounded-3 shadow-lg"
+                                        src="assets/img/img_projets/img_projet_5.jpg"
+                                        alt="IMAGE DU PROJET 3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-5 bg-light">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img
+                                        class="img-projet img-fluid rounded-3 shadow-lg image-992"
+                                        src="assets/img/img_projets/img_projet_6.png"
+                                        alt="IMAGE DU PROJET 6">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Projet n°6</h5>
+                                        <p class="card-text">Dans ce projet, je
+                                            devais construire une API sécurisée
+                                            pour une application d'avis
+                                            gastronomiques, avec plusieurs
+                                            exigences :</p>
+                                        <p class="card-text">1) Un formulaire de
+                                            connection/enregistrement de
+                                            l'utilisateur avec sécurisation du
+                                            mot de passe.</p>
+                                        <p class="card-text">2) Utilisation de
+                                            la base de données 'MongoDB'.</p>
+                                        <p class="card-text">3) Utilisation d'un
+                                            Token.</p>
+                                        <p class="card-text">4) Pouvoir liker et
+                                            disliker.</p>
+                                        <p class="card-text">5) Les images
+                                            effacées dans l'API sont effacées
+                                            dans le dossier.</p>
+                                        <form
+                                            title="lien en cours de construction"
+                                            target="_blank">
+                                            <button type="button"
+                                                class="btn-projets rounded"
+                                                disabled>Voir le projet</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-5 bg-light">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Projet n°7</h5>
+                                        <p class="card-text">Pour ce dernier
+                                            projet, je devais créer un réseau
+                                            social d'entreprise avec toutes les
+                                            spécificités techniques d'un réseau
+                                            social style Facebook.</p>
+                                        <p class="card-text">Malheureusement,
+                                            s'il a un aspect simpliste, c'est
+                                            parce que je me trouvais à la fin de
+                                            mon parcours de formation et, pressé
+                                            par le temps, je me suis concentré
+                                            sur les spécificités techniques
+                                            plutôt que sur le design.</p>
+                                        <form
+                                            action="https://papag57.github.io/P3-Dev-Web-HoMyFood/"
+                                            title="lien en cours de construction"
+                                            target="_blank">
+                                            <button type="button"
+                                                class="btn-projets rounded"
+                                                disabled>Voir le projet</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="carouselExampleAutoplaying"
+                                        class="carousel slide"
+                                        data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img
+                                                    class="img-projet d-block w-100 image-992"
+                                                    src="assets/img/img_projets/img_projet_7/img_projet_7.jpg"
+                                                    alt="image du projet numéro 7">
+                                            </div>
+                                            <div class="carousel-item active">
+                                                <img
+                                                    class="img-projet d-block w-100"
+                                                    src="assets/img/img_projets/img_projet_7/img_projet_7-1.jpg"
+                                                    alt="image du projet numéro 7">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    class="img-projet d-block w-100"
+                                                    src="assets/img/img_projets/img_projet_7/img_projet_7-2.jpg"
+                                                    alt="image du projet numéro 7">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img
+                                                    class="img-projet d-block w-100"
+                                                    src="assets/img/img_projets/img_projet_7/img_projet_7-3.jpg"
+                                                    alt="image du projet numéro 7">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev"
+                                            type="button"
+                                            data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide="prev">
+                                            <span
+                                                class="carousel-control-prev-icon"
+                                                aria-hidden="true"></span>
+                                            <span
+                                                class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next"
+                                            type="button"
+                                            data-bs-target="#carouselExampleAutoplaying"
+                                            data-bs-slide="next">
+                                            <span
+                                                class="carousel-control-next-icon"
+                                                aria-hidden="true"></span>
+                                            <span
+                                                class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-5 bg-light">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h5 class="card-title">Projet n°5</h5>
-                                <p class="card-text">Mon objectif était de développer un site e-commerce de vente de canapé. J'avais également des impératifs :</p>
-                                <p class="card-text">1) Installation du backend pour l'utitlisation d'une API.</p>
-                                <p class="card-text">2) Utilisation d'un token.</p>
-                                <p class="card-text">3) Constitution d'une page panier et de confirmation (avec un numéro de validation).</p>
-                                <p class="card-text">4) Sécurisation des données dans le localstorage.</p>
-                                <p class="card-text"><sub><em>NB : La partie HTML/CSS était déjà construite.</em></sub></p>
-                                <form title="lien en cours de construction" target="_blank">
-                                    <button type="button" class="btn-projets rounded" disabled>Voir le projet</button>
-                                </form> 
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="img-projet img-fluid rounded-3 shadow-lg" src="assets/img/img_projets/img_projet_5.jpg"
-                                alt="IMAGE DU PROJET 3">
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-5 bg-light">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img class="img-projet img-fluid rounded-3 shadow-lg image-992" src="assets/img/img_projets/img_projet_6.png"
-                                alt="IMAGE DU PROJET 6">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h5 class="card-title">Projet n°6</h5>
-                                <p class="card-text">Dans ce projet, je devais construire une API sécurisée pour une application d'avis gastronomiques, avec plusieurs exigences :</p>
-                                <p class="card-text">1) Un formulaire de connection/enregistrement de l'utilisateur avec sécurisation du mot de passe.</p>
-                                <p class="card-text">2) Utilisation de la base de données 'MongoDB'.</p>
-                                <p class="card-text">3) Utilisation d'un Token.</p>
-                                <p class="card-text">4) Pouvoir liker et disliker.</p>
-                                <p class="card-text">5) Les images effacées dans l'API sont effacées dans le dossier.</p>
-                                <form title="lien en cours de construction" target="_blank">
-                                    <button type="button" class="btn-projets rounded" disabled>Voir le projet</button>
-                                </form>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-5 bg-light">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h5 class="card-title">Projet n°7</h5>
-                                <p class="card-text">Pour ce dernier projet, je devais créer un réseau social d'entreprise avec toutes les spécificités techniques d'un réseau social style Facebook.</p>
-                                <p class="card-text">Malheureusement, s'il a un aspect simpliste, c'est parce que je me trouvais à la fin de mon parcours de formation et, pressé par le temps, je me suis concentré sur les spécificités techniques plutôt que sur le design.</p>
-                                <form action="https://papag57.github.io/P3-Dev-Web-HoMyFood/"  title="lien en cours de construction" target="_blank">
-                                    <button type="button" class="btn-projets rounded" disabled>Voir le projet</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img class="img-projet d-block w-100 image-992"
-                                            src="assets/img/img_projets/img_projet_7/img_projet_7.jpg"
-                                            alt="image du projet numéro 7">
-                                    </div>
-                                    <div class="carousel-item active">
-                                        <img class="img-projet d-block w-100"
-                                            src="assets/img/img_projets/img_projet_7/img_projet_7-1.jpg"
-                                            alt="image du projet numéro 7">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="img-projet d-block w-100"
-                                            src="assets/img/img_projets/img_projet_7/img_projet_7-2.jpg"
-                                            alt="image du projet numéro 7">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="img-projet d-block w-100"
-                                            src="assets/img/img_projets/img_projet_7/img_projet_7-3.jpg"
-                                            alt="image du projet numéro 7">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- section CV -->
-    <section id="cv" class="fg-menu py-5 merriweather">
-        <div class="container py-5">
-            <div class="row row row-cols-1">
-                <h3 class="text-center text-light merriweather fs-1">Mon CV</h3>
-                <div class="card p-presentation text-center mb-4">
-                    <div class="row card-blur card-body text-light">
-                        <p class="card-text text-center fs-2">Développeur full-stack junior</p>
-                        <p class="text-center text-light merriweather">
-                            Disponible immédiatement, je suis à la recherche d’un contrat de professionnalisation et je suis prêt à me déplacer dans la région Metzine et Thionvilloise. Sérieux, organisé et m'adaptant facilement, je serai heureux d'apporter mon envie et mes motivations à votre entreprise tout en cherchant à améliorer mes compétences.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="row row-cols-1 col-md-6">
-                        <div class="carte-cv mb-5 bg-light d-flex flex-column justify-content-center">
-                            <h5 class="card-title text-center"><strong>FORMATIONS</strong></h5>
-                            <div class="d-flex justify-content-center align-items-center gap-4">
-                            </div>
-                            <hr class="ligne">
-                            <div class="d-flex justify-content-center align-items-center gap-4">
-                                <img src="assets/img/Logos/openClassrooms.ico" class="logos card-img-top rounded-3 shadow-lg" alt="logo OpenClassrooms">                          
-                                <p class="card-text"><span class="p-italic">Octobre 2021-Octobre 2022</span><br>
-                                    Développeur web - OPENCLASSROOMS
-                                    Obtention du titre certifié RNCP niveau bac+2</p>
-                            </div>
-                            <hr class="ligne">
-                            <div class="d-flex justify-content-center align-items-center gap-4">
-                                <img src="assets/img/Logos/afpa.ico" class="logos card-img-top rounded-3 shadow-lg" alt="logo AFPA">                          
-                                <p class="card-text"><span class="p-italic">Mars 2020-Juillet 2021</span><br>
-                                    VAE Assistant ressources humaines – AFPA THIONVILLE<br>
-                                    Obtention du titre CCP 002822 de niveau 5 (bac+2)
-                                    Titre complet : Contribuer au développement des RH</p>
+            <!-- section CV -->
+            <section id="cv" class="fg-menu py-5 merriweather">
+                <div class="container py-5">
+                    <div class="row row row-cols-1">
+                        <h3 class="text-center text-light merriweather fs-1">Mon
+                            CV</h3>
+                        <div class="card p-presentation text-center mb-4">
+                            <div class="row card-blur card-body text-light">
+                                <p
+                                    class="card-text text-center fs-2">Développeur
+                                    junior</p>
+                                <p class="text-center text-light merriweather">
+                                    Disponible immédiatement, je suis à la
+                                    recherche d’un contrat de
+                                    professionnalisation et je suis prêt à me
+                                    déplacer dans la région Metzine et
+                                    Thionvilloise. Sérieux, organisé et
+                                    m'adaptant facilement, je serai heureux
+                                    d'apporter mon envie et mes motivations à
+                                    votre entreprise tout en cherchant à
+                                    améliorer mes compétences.
+                                </p>
                             </div>
                         </div>
-                    </div> 
-                    <div class="row row-cols-1 col-md-6">
-                        <div class="carte-cv mb-5 bg-light d-flex flex-column justify-content-center">
-                            <h5 class="card-title text-center"><strong>COMPÉTENCES ACQUISES</strong></h5><br>
-                            <div class="d-flex justify-content-center align-items-center gap-4">
-                                <img src="assets/img/Logos/html.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo HTML" title="HTML 5">
-                                <img src="assets/img/Logos/css.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo CSS" title="CSS 3">                                 
-                                <img src="assets/img/Logos/javascript.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo javascript" title="Javascript">                               <img src="assets/img/Logos/visual-studio-code.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo Microsoft Visual studio code" title="Microsoft Visual Studio Code">    
-                            </div>
-                            <hr class="ligne"><br>
-                            <h5 class="card-title text-center"><strong>COMPÉTENCES ÉTUDIÉES</strong></h5><br>
-                            <div class="d-flex flex-column justify-content-center gap-3">
-                                <div class="d-flex justify-content-center align-items-center gap-3">
-                                    <img src="assets/img/Logos/react.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo react" title="React">
-                                    <img src="assets/img/Logos/angular.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo angular" title="Angular">                                 
-                                    <img src="assets/img/Logos/mysql.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo my sql" title="MySql">                                       <img src="assets/img/Logos/mongodb.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo mongo db" title="Mongodb">
-                                    <img src="assets/img/Logos/nodejs.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo node js" title="Nodejs">
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center gap-3"> 
-                                    <img src="assets/img/Logos/GitHub.png" class="logos card-img-top rounded-3 shadow-lg" alt="logo github" title="Github">                                 
-                                    <img src="assets/img/Logos/php.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo php" title="PHP">                                           <img src="assets/img/Logos/wordpress.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo wordpress" title="Wordpress">    
-                                    <img src="assets/img/Logos/sass.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo sass" title="Sass">
-                                    <img src="assets/img/Logos/bootstrap5.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo Bootstrap 5" title="Bootstrap 5">
-                                </div>                    
+                    </div>
+                    <div class="container">
+                        <div class="row d-flex justify-content-between">
+                            <div class="row row-cols-1 col-md-6">
+                                <div
+                                    class="carte-cv mb-5 bg-light d-flex flex-column justify-content-center">
+                                    <h5
+                                        class="card-title text-center"><strong>FORMATIONS</strong></h5>
+                                    <div
+                                        class="d-flex justify-content-center align-items-center gap-4">
+                                    </div>
                                     <hr class="ligne">
+                                    <div
+                                        class="d-flex justify-content-center align-items-center gap-4">
+                                        <img
+                                            src="assets/img/Logos/openClassrooms.ico"
+                                            class="logos card-img-top rounded-3 shadow-lg"
+                                            alt="logo OpenClassrooms">
+                                        <p class="card-text"><span
+                                                class="p-italic">Octobre
+                                                2021-Octobre 2022</span><br>
+                                            Développeur web - OPENCLASSROOMS
+                                            Obtention du titre certifié RNCP
+                                            niveau bac+2</p>
+                                    </div>
+                                    <hr class="ligne">
+                                    <div
+                                        class="d-flex justify-content-center align-items-center gap-4">
+                                        <img src="assets/img/Logos/afpa.ico"
+                                            class="logos card-img-top rounded-3 shadow-lg"
+                                            alt="logo AFPA">
+                                        <p class="card-text"><span
+                                                class="p-italic">Mars
+                                                2020-Juillet 2021</span><br>
+                                            VAE Assistant ressources humaines –
+                                            AFPA THIONVILLE<br>
+                                            Obtention du titre CCP 002822 de
+                                            niveau 5 (bac+2)
+                                            Titre complet : Contribuer au
+                                            développement des RH</p>
+                                    </div>
+                                </div>
                             </div>
-                                <h5 class="card-title text-center"><strong>LOGICIELS / ENVIRONNEMENT</strong></h5><br>
-                            <div class="d-flex justify-content-center align-items-center gap-4">
-                                <img src="assets/img/Logos/office2021.jpg" class="office card-img-top rounded-3 shadow-lg" alt="logo suite office 2021">
-                                <img src="assets/img/Logos/adobe-premiere-element.jpg" class="logos card-img-top rounded-3 shadow-lg" alt="logo Adobe Première Element">                                 
+                            <div class="row row-cols-1 col-md-6">
+                                <div
+                                    class="carte-cv mb-5 bg-light d-flex flex-column justify-content-center">
+                                    <h5
+                                        class="card-title text-center"><strong>COMPÉTENCES
+                                            ACQUISES</strong></h5><br>
+                                    <div
+                                        class="d-flex justify-content-center align-items-center gap-4">
+                                        <img src="assets/img/Logos/html.jpg"
+                                            class="logos card-img-top rounded-3 shadow-lg"
+                                            alt="logo HTML" title="HTML 5">
+                                        <img src="assets/img/Logos/css.jpg"
+                                            class="logos card-img-top rounded-3 shadow-lg"
+                                            alt="logo CSS" title="CSS 3">
+                                        <img
+                                            src="assets/img/Logos/javascript.jpg"
+                                            class="logos card-img-top rounded-3 shadow-lg"
+                                            alt="logo javascript"
+                                            title="Javascript"> <img
+                                            src="assets/img/Logos/visual-studio-code.jpg"
+                                            class="logos card-img-top rounded-3 shadow-lg"
+                                            alt="logo Microsoft Visual studio code"
+                                            title="Microsoft Visual Studio Code">
+                                    </div>
+                                    <hr class="ligne"><br>
+                                    <h5
+                                        class="card-title text-center"><strong>COMPÉTENCES
+                                            ÉTUDIÉES</strong></h5><br>
+                                    <div
+                                        class="d-flex flex-column justify-content-center gap-3">
+                                        <div
+                                            class="d-flex justify-content-center align-items-center gap-3">
+                                            <img
+                                                src="assets/img/Logos/react.jpg"
+                                                class="logos card-img-top rounded-3 shadow-lg"
+                                                alt="logo react" title="React">
+                                            <img
+                                                src="assets/img/Logos/angular.jpg"
+                                                class="logos card-img-top rounded-3 shadow-lg"
+                                                alt="logo angular"
+                                                title="Angular">
+                                            <img
+                                                src="assets/img/Logos/mysql.jpg"
+                                                class="logos card-img-top rounded-3 shadow-lg"
+                                                alt="logo my sql" title="MySql">
+                                            <img
+                                                src="assets/img/Logos/mongodb.jpg"
+                                                class="logos card-img-top rounded-3 shadow-lg"
+                                                alt="logo mongo db"
+                                                title="Mongodb">
+                                            <img
+                                                src="assets/img/Logos/nodejs.jpg"
+                                                class="logos card-img-top rounded-3 shadow-lg"
+                                                alt="logo node js"
+                                                title="Nodejs">
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-center align-items-center gap-3">
+                                            <img
+                                                src="assets/img/Logos/GitHub.png"
+                                                class="logos card-img-top rounded-3 shadow-lg"
+                                                alt="logo github"
+                                                title="Github">
+                                            <img src="assets/img/Logos/php.jpg"
+                                                class="logos card-img-top rounded-3 shadow-lg"
+                                                alt="logo php" title="PHP"> <img
+                                                src="assets/img/Logos/wordpress.jpg"
+                                                class="logos card-img-top rounded-3 shadow-lg"
+                                                alt="logo wordpress"
+                                                title="Wordpress">
+                                            <img src="assets/img/Logos/sass.jpg"
+                                                class="logos card-img-top rounded-3 shadow-lg"
+                                                alt="logo sass" title="Sass">
+                                            <img
+                                                src="assets/img/Logos/bootstrap5.jpg"
+                                                class="logos card-img-top rounded-3 shadow-lg"
+                                                alt="logo Bootstrap 5"
+                                                title="Bootstrap 5">
+                                        </div>
+                                        <hr class="ligne">
+                                    </div>
+                                    <h5
+                                        class="card-title text-center"><strong>LOGICIELS
+                                            / ENVIRONNEMENT</strong></h5><br>
+                                    <div
+                                        class="d-flex justify-content-center align-items-center gap-4">
+                                        <img
+                                            src="assets/img/Logos/office2021.jpg"
+                                            class="office card-img-top rounded-3 shadow-lg"
+                                            alt="logo suite office 2021">
+                                        <img
+                                            src="assets/img/Logos/adobe-premiere-element.jpg"
+                                            class="logos card-img-top rounded-3 shadow-lg"
+                                            alt="logo Adobe Première Element">
+                                    </div>
+                                    <hr class="ligne"><br>
+                                    <div
+                                        class="d-flex justify-content-center align-items-center gap-4">
+                                        <h5
+                                            class="card-title text-center"><strong>LANGUES</strong></h5>
+                                    </div><br>
+                                    <div class="comp1">
+                                        <p>Français</p>
+                                        <p>100%</p>
+                                        <div class="conteneur-barre1"><span
+                                                class="barre c100"></span></div>
+                                    </div>
+                                    <div class="comp1">
+                                        <p>Anglais</p>
+                                        <p>30%</p>
+                                        <div class="conteneur-barre1"><span
+                                                class="barre c30"></span></div>
+                                    </div>
+                                </div>
                             </div>
-                            <hr class="ligne"><br> 
-                            <div class="d-flex justify-content-center align-items-center gap-4">                        
-                                <h5 class="card-title text-center"><strong>LANGUES</strong></h5>
-                            </div><br>
-                            <div class="comp1">
-                                <p>Français</p>
-                                <p>100%</p>
-                                <div class="conteneur-barre1"><span class="barre c100"></span></div>
+                            <div class="row row-cols-1 col-md-6">
+                                <div
+                                    class="carte-cv mb-5 bg-light d-flex flex-column justify-content-center">
+                                    <h5
+                                        class="card-title text-center"><strong>EXPÉRIENCES
+                                            PROFESSIONNELLES</strong></h5>
+                                    <div
+                                        class="d-flex justify-content-center align-items-center gap-4">
+                                        <img
+                                            src="assets/img/Logos/openClassrooms.ico"
+                                            class="logos card-img-top rounded-3 shadow-lg"
+                                            alt="logo OpenClassrooms">
+                                        <p class="card-text"><br><span
+                                                class="p-italic">Octobre
+                                                2021-Octobre 2022</span><br>En
+                                            tant qu’étudiant chez OPENCLASSROOMS
+                                            <br><br><span
+                                                class="p-italic">Réalisations de
+                                                6 projets d'études versionnés
+                                                Github :</span><br><br>
+                                            - Transformer une maquette en site
+                                            Web <span class="p-italic">(HTML,
+                                                CSS)</span> <br>- Dynamiser une
+                                            page web avec des animations <span
+                                                class="p-italic">CSS</span><br>
+                                            - Optimiser un site web existant
+                                            (projet <span
+                                                class="p-italic">SEO</span>)<br>
+                                            - Construire un site e-commerce
+                                            <span
+                                                class="p-italic">(javascript)</span>
+                                            <br>
+                                            -Programmation d'une API sécurisée
+                                            pour une application gastronomique
+                                            <span
+                                                class="p-italic">(angular)</span><br>
+                                            - Créer un réseau social
+                                            d'entreprise <span
+                                                class="p-italic">(React)</span></p>
+                                    </div>
+                                    <br><hr class="ligne"><br>
+                                    <div
+                                        class="d-flex justify-content-center align-items-center gap-4">
+                                        <img src="assets/img/Logos/VNF.png"
+                                            class="logos card-img-top rounded-3 shadow-lg"
+                                            alt="logo Voies Navigables de France">
+                                        <p class="card-text"><span
+                                                class="p-italic">Mars
+                                                1994-décembre
+                                                2020</span><br>VOIES NAVIGABLES
+                                            DE FRANCE<br><br>
+                                            Fonctionnaire dans un établissement
+                                            publique. <br> <span
+                                                class="p-italic">2004-2020</span>
+                                            – Assistant ressources humaines<br>
+                                            <span
+                                                class="p-italic">1994-2004</span>
+                                            – Agent à chef d’équipe
+                                            principal</p><br>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="comp1">
-                                <p>Anglais</p>
-                                <p>30%</p>
-                                <div class="conteneur-barre1"><span class="barre c30"></span></div>
-                            </div>         
-                        </div>
-                    </div>
-                    <div class="row row-cols-1 col-md-6">
-                        <div class="carte-cv mb-5 bg-light d-flex flex-column justify-content-center">
-                            <h5 class="card-title text-center"><strong>EXPÉRIENCES PROFESSIONNELLES</strong></h5>
-                            <div class="d-flex justify-content-center align-items-center gap-4">
-                                <img src="assets/img/Logos/openClassrooms.ico" class="logos card-img-top rounded-3 shadow-lg" alt="logo OpenClassrooms">
-                                <p class="card-text"><br><span class="p-italic">Octobre 2021-Octobre 2022</span><br>En tant qu’étudiant chez OPENCLASSROOMS <br><br><span class="p-italic">Réalisations de 6 projets d'études versionnés Github :</span><br><br>
-                                    - Transformer une maquette en site Web <span class="p-italic">(HTML, CSS)</span> <br>- Dynamiser une page web avec des animations <span class="p-italic">CSS</span><br>
-                                    - Optimiser un site web existant (projet <span class="p-italic">SEO</span>)<br>
-                                    - Construire un site e-commerce <span class="p-italic">(javascript)</span> <br>
-                                    -Programmation d'une API sécurisée pour une application gastronomique <span class="p-italic">(angular)</span><br>
-                                    - Créer un réseau social d'entreprise <span class="p-italic">(React)</span></p>
+                            <div class="row row-cols-1 col-md-6">
+                                <div
+                                    class="carte-cv mb-5 bg-light d-flex flex-column justify-content-center">
+                                    <h5
+                                        class="card-title text-center"><strong>QUALITÉS
+                                            HUMAINES</strong></h5>
+                                    <div
+                                        class="d-flex justify-content-center align-items-center gap-4">
+                                        <p class="card-text">Esprit d’équipe –
+                                            sens de l’organisation –
+                                            Curieux – Volonté d’apprendre -
+                                            Capacité d’écoute – Adaptabilité
+                                            - Enthousiaste - Empathique
+                                        </p>
+                                    </div>
+                                    <br><hr class="ligne"><br>
+                                    <h5
+                                        class="card-title text-center"><strong>CENTRE
+                                            D’INTÉRÊTS</strong></h5><br>
+                                    <div class="content-interet">
+                                        <div class="div-interet gap-4">
+                                            <figure class="interet">
+                                                <img
+                                                    src="assets/img/Logos/informatique.jpg"
+                                                    alt="logo d'ordinateur">
+                                                <figcaption>informatique</figcaption>
+                                            </figure>
+                                            <figure class="interet">
+                                                <img
+                                                    src="assets/img/Logos/internet.jpg"
+                                                    alt="logo Internet">
+                                                <figcaption>internet</figcaption>
+                                            </figure>
+                                            <figure class="interet">
+                                                <img
+                                                    src="assets/img/Logos/assossiatif.webp"
+                                                    alt="logo de l'associassion Maman Esther">
+                                                <figcaption>associatif<sup>
+                                                        1</sup></figcaption>
+                                            </figure>
+                                            <figure class="interet">
+                                                <img
+                                                    src="assets/img/Logos/billard.jpg"
+                                                    alt="logo de billard">
+                                                <figcaption>billard<sup>
+                                                        2</sup></figcaption>
+                                            </figure>
+                                            <figure class="interet">
+                                                <img
+                                                    src="assets/img/Logos/cinema.jpg"
+                                                    alt="logo de cinéma">
+                                                <figcaption>cinéma</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="div-interet gap-3">
+                                            <figure class="interet">
+                                                <img
+                                                    src="assets/img/Logos/lecture.jpg"
+                                                    alt="logo livre pour lecture">
+                                                <figcaption>lecture</figcaption>
+                                            </figure>
+                                            <figure class="interet">
+                                                <img
+                                                    src="assets/img/Logos/voyages.jpg"
+                                                    alt="logo de voyage">
+                                                <figcaption>voyage</figcaption>
+                                            </figure>
+                                            <figure class="interet">
+                                                <img
+                                                    src="assets/img/Logos/sciences.jpg"
+                                                    alt="logo du magazine Sciences et Vies">
+                                                <figcaption>sciences
+                                                    générales</figcaption>
+                                            </figure>
+                                        </div><br>
+                                        <p class="p-small"><sup>1
+                                            </sup>Association créée et gérée par
+                                            mon épouse et moi-même.</p>
+                                        <p class="p-small"><sup>2 </sup>J'ai
+                                            joué en compétition au niveau
+                                            régionnal.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <br><hr class="ligne"><br>
-                            <div class="d-flex justify-content-center align-items-center gap-4">
-                                <img src="assets/img/Logos/VNF.png" class="logos card-img-top rounded-3 shadow-lg" alt="logo Voies Navigables de France">                          
-                                <p class="card-text"><span class="p-italic">Mars 1994-décembre 2020</span><br>VOIES NAVIGABLES DE FRANCE<br><br>
-                                    Fonctionnaire dans un établissement publique. <br> <span class="p-italic">2004-2020</span> – Assistant ressources humaines<br>
-                                    <span class="p-italic">1994-2004</span> – Agent à chef d’équipe principal</p><br>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-cols-1 col-md-6">
-                        <div class="carte-cv mb-5 bg-light d-flex flex-column justify-content-center">
-                            <h5 class="card-title text-center"><strong>QUALITÉS HUMAINES</strong></h5>
-                    <div class="d-flex justify-content-center align-items-center gap-4">
-                        <p class="card-text">Esprit d’équipe – sens de l’organisation –
-                            Curieux – Volonté d’apprendre -
-                            Capacité d’écoute – Adaptabilité
-                            - Enthousiaste - Empathique
-                        </p>
-                    </div>
-                    <br><hr class="ligne"><br>
-                    <h5 class="card-title text-center"><strong>CENTRE D’INTÉRÊTS</strong></h5><br>
-                    <div class="content-interet">
-                        <div class="div-interet gap-4">
-                            <figure class="interet">
-                                <img src="assets/img/Logos/informatique.jpg" alt="logo d'ordinateur">
-                                <figcaption>informatique</figcaption>
-                            </figure>
-                            <figure class="interet">
-                                <img src="assets/img/Logos/internet.jpg" alt="logo Internet">
-                                <figcaption>internet</figcaption>
-                            </figure>
-                            <figure class="interet">
-                                <img src="assets/img/Logos/assossiatif.webp" alt="logo de l'associassion Maman Esther">
-                                <figcaption>associatif<sup> 1</sup></figcaption>
-                            </figure>
-                            <figure class="interet">
-                                <img src="assets/img/Logos/billard.jpg" alt="logo de billard">
-                                <figcaption>billard<sup> 2</sup></figcaption>
-                            </figure>
-                            <figure class="interet">
-                                <img src="assets/img/Logos/cinema.jpg" alt="logo de cinéma">
-                                <figcaption>cinéma</figcaption>
-                            </figure>
-                        </div>
-                        <div class="div-interet gap-3">
-                            <figure class="interet">
-                                <img src="assets/img/Logos/lecture.jpg" alt="logo livre pour lecture">
-                                <figcaption>lecture</figcaption>
-                            </figure>
-                            <figure class="interet">
-                                <img src="assets/img/Logos/voyages.jpg" alt="logo de voyage">
-                                <figcaption>voyage</figcaption>
-                            </figure>
-                            <figure class="interet">
-                                <img src="assets/img/Logos/sciences.jpg" alt="logo du magazine Sciences et Vies">
-                                <figcaption>sciences générales</figcaption>
-                            </figure>                                    
-                        </div><br>
-                        <p class="p-small"><sup>1 </sup>Association créée et gérée par mon épouse et moi-même.</p>
-                        <p class="p-small"><sup>2 </sup>J'ai joué en compétition au niveau régionnal.</p>                                
-                    </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- section contact -->
-    <section id="contact" class="order-form py-5">
-        <div class="container">
-            <h2 class="title_contact merriweather text-center text-light mb-4">CONTACT</h2>
-            <div class="bg-contact p-2 d-flex flex-column justify-content-center rounded">
-                <p class="merriweather text-center text-black mb-1 py-1 p-contact">Si vous souhaitez me contacter, n'hésitez pas à m'envoyer un message en cliquant sur le lien ci-dessous.</p>
-                    <p class="merriweather text-center p-contact">
-                        <strong>
-                            <a href="mailto:florentgerard@fgdeveloppement.com?subject=n'oubliez-pas-l'objet-!">florentgerard@fgdeveloppement.com</a>
-                        </strong>
-                    </p>
-            </div>
+            <!-- section contact -->
+            <section id="contact" class="order-form py-5">
+                <div class="container">
+                    <h2
+                        class="title_contact merriweather text-center text-light mb-4">CONTACT</h2>
+                    <div
+                        class="bg-contact p-2 d-flex flex-column justify-content-center rounded">
+                        <p
+                            class="merriweather text-center text-black mb-1 py-1 p-contact">Si
+                            vous souhaitez me contacter, n'hésitez pas à
+                            m'envoyer un message en cliquant sur le lien
+                            ci-dessous.</p>
+                        <p class="merriweather text-center p-contact">
+                            <strong>
+                                <a
+                                    href="mailto:florentgerard@fgdeveloppement.com?subject=n'oubliez-pas-l'objet-!">florentgerard@fgdeveloppement.com</a>
+                            </strong>
+                        </p>
+                    </div>
 
-            <!-- Cette partie ne sera active que quand je maîtriserai l'envoi de données des formulaires-->
+                    <!-- Cette partie ne sera active que quand je maîtriserai l'envoi de données des formulaires-->
 
-            <!-- <br>
+                    <!-- <br>
             <form class="merriweather mb-2" action="post">
                 <div class="row">
                     <div class="col-md-6 col-sm">
@@ -514,7 +888,7 @@
                             <textarea class="form-control" id="entree-texte" rows="5"
                                 placeholder="Tapez votre message ici" required></textarea>
                             <div class="invalid-feedback">
-                                N'oubliez pas de m'écrire un petit mot ðÂÂÂÂÂÂ!
+                                N'oubliez pas de m'écrire un petit mot !
                             </div>
                         </div>
                     </div>
@@ -562,63 +936,93 @@
                 <p> <br>
                 <p class="form-text text-danger fw-bold">Vos données ne seront jamais partagées
                     avec des tiers. (voir mentions légales ci-dessous)</p> -->
-        </div>
-    </section>
+                </div>
+            </section>
 
-    <footer id="footer">
-        <div class="footer-liens text-light py-5 redressed">
-            <div class="fg-footer d-flex justify-content-evenly align-items-center">
-                <p class="fw-bold fs-3"><a class="github nav-link" href="https://github.com/PapaG57" target="_blank"><i
-                            class="bi bi-github"></i>
-                        Github</a></p>
-                <p class="fw-bold fs-3"><a class=" linkedin nav-link"
-                        href="https://www.linkedin.com/in/florent-gerard-0138a916b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYiNKJ%2F2QR4%2BHZQfNCBpqcw%3D%3D" target="_blank"><i
-                            class="bi bi-linkedin"></i>
-                        LinkedIn</a>
-                </p>
-                <p class="fw-bold fs-3"><a class="mentions nav-link" id="mentions" onclick="showOrCloseMentions()"><i class="bi bi-journal-text"></i>
-                        Mentions
-                        légales</a></p>
+            <footer id="footer">
+                <div class="footer-liens text-light py-5 redressed">
+                    <div
+                        class="fg-footer d-flex justify-content-evenly align-items-center">
+                        <p class="fw-bold fs-3"><a class="github nav-link"
+                                href="https://github.com/PapaG57"
+                                target="_blank"><i
+                                    class="bi bi-github"></i>
+                                Github</a></p>
+                        <p class="fw-bold fs-3"><a class=" linkedin nav-link"
+                                href="https://www.linkedin.com/in/florent-gerard-0138a916b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYiNKJ%2F2QR4%2BHZQfNCBpqcw%3D%3D"
+                                target="_blank"><i
+                                    class="bi bi-linkedin"></i>
+                                LinkedIn</a>
+                        </p>
+                        <p class="fw-bold fs-3"><a class="mentions nav-link"
+                                id="mentions" onclick="showOrCloseMentions()"><i
+                                    class="bi bi-journal-text"></i>
+                                Mentions
+                                légales</a></p>
                         <div id="div-mentions-to-open">
                             <div id="mentions-text">
-                                <p id="mentions-title"><b>MENTIONS LÉGALES</b></p>
-                                <p class="p-mention">Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance
-                                en l'économie numérique, il est précisé aux utilisateurs de ce site l'identité des
-                                différents intervenants dans le cadre de sa réalisation et de son suivi.</p>    
+                                <p id="mentions-title"><b>MENTIONS
+                                        LÉGALES</b></p>
+                                <p class="p-mention">Conformément aux
+                                    dispositions de la loi n° 2004-575 du 21
+                                    juin 2004 pour la confiance
+                                    en l'économie numérique, il est précisé aux
+                                    utilisateurs de ce site l'identité des
+                                    différents intervenants dans le cadre de sa
+                                    réalisation et de son suivi.</p>
                                 <p class="p-mention"><b>ÉDITION DU SITE</b>
-                                <br>Le présent site, accessible à l’URL https://fgdeveloppement.portfolio.com,
-                                est édité par Florent GERARD, résidant à 5 rue du Quartier Étage 3 Appt 8
-                                57100&nbsp;THIONVILLE, de nationalité française (France), né le 24/10/1968.</p>    
+                                    <br>Le présent site, accessible à l’URL
+                                    https://fgdeveloppement.portfolio.com,
+                                    est édité par Florent GERARD, résidant à 5
+                                    rue du Quartier Étage 3 Appt 8
+                                    57100&nbsp;THIONVILLE, de nationalité
+                                    française (France), né le 24/10/1968.</p>
                                 <p class="p-mention"><b>HÉBERGEMENT</b>
-                                <br>Le site est hébergé par la société 007hebergement,
-                                situé 10 rue Penthièvre 75008 Paris accessible via le site <a href="https://www.007hebergement.com/" target="_blank">007 hebergement</a>.</p>    
-                                <p class="p-mention"><b>Directeur de publication</b>
-                                <br>Le Directeur de la publication du site est Florent GERARD.</p>
+                                    <br>Le site est hébergé par la société
+                                    007hebergement,
+                                    situé 10 rue Penthièvre 75008 Paris
+                                    accessible via le site <a
+                                        href="https://www.007hebergement.com/"
+                                        target="_blank">007 hebergement</a>.</p>
+                                <p class="p-mention"><b>Directeur de
+                                        publication</b>
+                                    <br>Le Directeur de la publication du site
+                                    est Florent GERARD.</p>
                                 <p class="p-mention"><b>Me contacter</b>
-                                <br>Par téléphone : +33 6 45 65 65 17
-                                <br>Par email : florentgerard@fgdeveloppement.com
-                                <br>Par courrier : 5 rue du Quartier Etage 3 Appt 8 57100&nbsp;THIONVILLE</p>    
-                                <p class="p-mention">Génération des mentions légales par
-                                <a href="https://www.legalstart.fr/" target="_blank">Legalstart</a>.
-                            </p></div>
-                            <span id="mentions-close" onclick="showOrCloseMentions()">Fermer</span>
-                        </div>                               
-            </div>
-        </div>
-        <div class="cont-footer redressed text-light">
-            <div class="d-flex justify-content-center align-items-center gap-xxl-3">
-                <a href="http://fgdeveloppement.com" target="_blank"> <img src="assets/img/Logos/New_Logo_FG_DEV_no_background_blanc.png" alt="logo de l'auteur" class="footer-logo"></a>
-                <h2 class="copyright">© <span id="currentYear"></span> - Tous droits reservés</h2>
-            </div>
-        </div>
-    </footer>
+                                    <br>Par téléphone : +33 6 45 65 65 17
+                                    <br>Par email :
+                                    florentgerard@fgdeveloppement.com
+                                    <br>Par courrier : 5 rue du Quartier Etage 3
+                                    Appt 8 57100&nbsp;THIONVILLE</p>
+                                <p class="p-mention">Génération des mentions
+                                    légales par
+                                    <a href="https://www.legalstart.fr/"
+                                        target="_blank">Legalstart</a>.
+                                </p></div>
+                            <span id="mentions-close"
+                                onclick="showOrCloseMentions()">Fermer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-footer redressed text-light">
+                    <div
+                        class="d-flex justify-content-center align-items-center gap-xxl-3">
+                        <a href="http://fgdeveloppement.com" target="_blank">
+                            <img
+                                src="assets/img/Logos/New_Logo_FG_DEV_no_background_blanc.png"
+                                alt="logo de l'auteur" class="footer-logo"></a>
+                        <h2 class="copyright">© <span id="currentYear"></span> -
+                            Tous droits reservés</h2>
+                    </div>
+                </div>
+            </footer>
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/zoom.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/mentions.js"></script>
-    <script src="assets/js/annee_auto.js"></script>
+            <script src="assets/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/js/zoom.js"></script>
+            <script src="assets/js/lightbox.js"></script>
+            <script src="assets/js/mentions.js"></script>
+            <script src="assets/js/annee_auto.js"></script>
 
-</body>
+        </body>
 
-</html>
+    </html>
