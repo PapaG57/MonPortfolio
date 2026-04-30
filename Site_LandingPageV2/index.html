@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Florent GERARD - Portfolio V2</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Merriweather:wght@300;400;700&family=Redressed&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Logos/favicon-fg-dev.ico">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="fg-navbar navbar navbar-expand-lg position-fixed w-100 navbar-dark">
+        <div class="container">
+            <a class="navbar-brand redressed fs-2 fw-bold accent-text" href="#">FLORENT GERARD</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#quisuisje">Qui suis-je ?</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#cv">Mon CV</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-accent" href="#contact">Me contacter</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="section-bg overlay-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 text-center order-lg-2">
+                    <img src="assets/img/others_img/Photo-CV-07-12-22.jpg" alt="Florent GERARD" class="profile-img-v2 mb-5 mb-lg-0">
+                </div>
+                <div class="col-lg-7 order-lg-1">
+                    <h1 class="display-3 mb-4">Bonjour, je suis <br><span class="accent-text">Florent GERARD</span></h1>
+                    <div class="glass-card mb-4">
+                        <p class="p-justify fs-5 mb-0">
+                            Je vis dans la région Grand-Est, dans la zone des 3 frontières (Luxembourg - Belgique - Allemagne). À la suite d'une reconversion professionnelle, j'ai passé mon diplôme de <strong>développeur web</strong> (niveau bac+2), obtenu en octobre 2022.
+                        </p>
+                    </div>
+                    <p class="text-muted mb-5">Sur ce site, je vous présente mon parcours et mes projets réalisés lors de ma formation chez OpenClassrooms.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#quisuisje" class="btn btn-accent">Mon Histoire</a>
+                        <a href="#portfolio" class="btn btn-outline-accent">Mes Projets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Qui suis-je ? -->
+    <section id="quisuisje" class="section-bg overlay-dark">
+        <div class="container">
+            <h2 class="display-5 mb-5 text-center">Mon Histoire <span class="accent-text">Numérique</span></h2>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="glass-card h-100">
+                        <p class="p-justify">
+                            Depuis la création des ordinateurs personnels (PC), j'étais passionné par cette nouvelle technologie. Les joies des tous premiers ordinateurs sans disque dur, ni floppy disc, mais avec des cassettes audio devenant numériques !
+                        </p>
+                        <p class="p-justify">
+                            J'ai fait mes premiers pas avec un <strong>TI 99 4A</strong>. La programmation en Basic était fastidieuse mais fascinante. Plus tard, je me suis acheté un <strong>AMSTRAD CPC 6128</strong> avec mes premiers salaires. Quelle belle aventure !
+                        </p>
+                        <p class="p-justify">
+                            Après 27 ans chez Voies Navigables de France, j'ai saisi l'opportunité d'une reconversion. J'ai intégré <strong>OpenClassrooms</strong> et obtenu mon diplôme. Prochaine étape : Développeur web Full Stack !
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="glass-card mb-4 text-center">
+                        <h3 class="h5 mb-3">TI 99 4A</h3>
+                        <img src="assets/img/others_img/TI_99_4A.jpg" alt="TI 99 4A" class="img-fluid rounded border border-secondary mb-2">
+                        <p class="small text-muted">Le début de la passion</p>
+                    </div>
+                    <div class="glass-card text-center">
+                        <h3 class="h5 mb-3">AMSTRAD CPC 6128</h3>
+                        <img src="assets/img/others_img/AMSTRAD-CPC-6128.jpg" alt="AMSTRAD CPC 6128" class="img-fluid rounded border border-secondary mb-2">
+                        <p class="small text-muted">L'aventure du Basic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section id="portfolio" class="py-5">
+        <div class="container py-5">
+            <h2 class="display-5 mb-5 text-center">Mes <span class="accent-text">Projets</span></h2>
+            <div class="portfolio-grid">
+                
+                <!-- Projet 2 -->
+                <div class="glass-card project-card-v2">
+                    <div class="project-img-container">
+                        <img src="assets/img/img_projets/img_projet_2.png" alt="Projet 2">
+                    </div>
+                    <h3 class="h4 mb-3">Projet n°2 : Maquette</h3>
+                    <p class="p-justify text-muted flex-grow-1">Création d'un prototype de page web en intégrant une maquette en HTML et CSS.</p>
+                    <div class="mt-4">
+                        <a href="https://papag57.github.io/P2-Dev-Web-Maquette/" target="_blank" class="btn btn-accent w-100">Voir le projet</a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="glass-card project-card-v2">
+                    <div class="project-img-container">
+                        <img src="assets/img/img_projets/img_projet_3.jpg" alt="Projet 3">
+                    </div>
+                    <h3 class="h4 mb-3">Projet n°3 : OhMyFood</h3>
+                    <p class="p-justify text-muted flex-grow-1">Développement d'un site 100% mobile avec animations CSS avancées.</p>
+                    <div class="mt-4">
+                        <a href="https://papag57.github.io/P3-Dev-Web-HoMyFood/" target="_blank" class="btn btn-accent w-100">Voir le projet</a>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="glass-card project-card-v2">
+                    <div class="project-img-container">
+                        <img src="assets/img/img_projets/img_projet_4.jpg" alt="Projet 4">
+                    </div>
+                    <h3 class="h4 mb-3">Projet n°4 : SEO</h3>
+                    <p class="p-justify text-muted flex-grow-1">Optimisation SEO et accessibilité d'un site existant. Analyse et rapports.</p>
+                    <div class="d-flex gap-2 mt-4">
+                        <a href="rapports.html" class="btn btn-accent flex-grow-1">Rapports</a>
+                        <a href="https://papag57.github.io/P4-Dev-Web-La-Chouette-Agence/" target="_blank" class="btn btn-outline-accent">Site</a>
+                    </div>
+                </div>
+
+                <!-- Projet 6 -->
+                <div class="glass-card project-card-v2">
+                    <div class="project-img-container">
+                        <img src="assets/img/img_projets/img_projet_6.png" alt="Projet 6">
+                    </div>
+                    <h3 class="h4 mb-3">Projet n°6 : API</h3>
+                    <p class="p-justify text-muted flex-grow-1">Construction d'une API sécurisée pour une application d'avis gastronomiques (NoSQL).</p>
+                    <div class="mt-4">
+                        <button class="btn btn-accent w-100" disabled>Lien à venir</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CV -->
+    <section id="cv" class="section-bg overlay-dark">
+        <div class="container">
+            <h2 class="display-5 mb-5 text-center">Mon <span class="accent-text">CV</span></h2>
+            <div class="row g-4">
+                <div class="col-lg-12">
+                    <div class="glass-card text-center mb-5">
+                        <h3 class="h2 accent-text">Développeur Junior</h3>
+                        <p class="lead">Disponible immédiatement pour un contrat de professionnalisation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="glass-card h-100">
+                        <h3 class="h4 mb-4 border-bottom pb-2">Formations</h3>
+                        <div class="mb-4">
+                            <h4 class="h6 accent-text">2021-2022</h4>
+                            <p class="mb-1 fw-bold">Développeur Web - OpenClassrooms</p>
+                            <p class="small text-muted">Titre certifié RNCP Niveau 5 (Bac+2)</p>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="h6 accent-text">2020-2021</h4>
+                            <p class="mb-1 fw-bold">VAE Assistant RH - AFPA</p>
+                            <p class="small text-muted">Titre CCP Niveau 5 (Bac+2)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="glass-card h-100">
+                        <h3 class="h4 mb-4 border-bottom pb-2">Compétences</h3>
+                        <div class="d-flex flex-wrap gap-4 justify-content-center mb-4">
+                            <img src="assets/img/Logos/html.jpg" alt="HTML" class="skill-icon" title="HTML5">
+                            <img src="assets/img/Logos/css.jpg" alt="CSS" class="skill-icon" title="CSS3">
+                            <img src="assets/img/Logos/javascript.jpg" alt="JS" class="skill-icon" title="JavaScript">
+                            <img src="assets/img/Logos/react.jpg" alt="React" class="skill-icon" title="React">
+                            <img src="assets/img/Logos/nodejs.jpg" alt="Node" class="skill-icon" title="Node.js">
+                            <img src="assets/img/Logos/mongodb.jpg" alt="MongoDB" class="skill-icon" title="MongoDB">
+                        </div>
+                        <h4 class="h6 mb-3">Langues</h4>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between small"><span>Français</span><span>100%</span></div>
+                            <div class="progress-v2"><div class="progress-bar-v2" style="width: 100%"></div></div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between small"><span>Anglais</span><span>30%</span></div>
+                            <div class="progress-v2"><div class="progress-bar-v2" style="width: 30%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section-bg overlay-dark">
+        <div class="container">
+            <h2 class="display-5 mb-5 text-center">Me <span class="accent-text">Contacter</span></h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="glass-card">
+                        <form id="contactForm" class="row g-4">
+                            <div class="col-md-6">
+                                <label class="form-label">Prénom *</label>
+                                <input type="text" class="form-control form-control-v2" required id="firstname">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Nom *</label>
+                                <input type="text" class="form-control form-control-v2" required id="lastname">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Email *</label>
+                                <input type="email" class="form-control form-control-v2" required id="email">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Message *</label>
+                                <textarea class="form-control form-control-v2" rows="5" required id="message"></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-accent px-5 py-3">Envoyer le message</button>
+                                <div id="formStatus" class="mt-3"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <img src="assets/img/Logos/New_Logo_FG_DEV_no_background_blanc.png" alt="FG Dev" class="footer-logo mb-4">
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="https://github.com/PapaG57" target="_blank" class="text-white fs-4"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/florent-gerard-0138a916b" target="_blank" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p class="text-muted">© <span id="currentYear"></span> Florent GERARD - Tous droits réservés</p>
+            <p class="small text-muted"><a href="#" class="text-muted text-decoration-none">Mentions légales</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

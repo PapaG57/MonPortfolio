@@ -1,0 +1,135 @@
+:root {
+    --bg-dark: #0f172a;
+    --bg-card: rgba(30, 41, 59, 0.7);
+    --accent: #38bdf8;
+    --accent-glow: rgba(56, 189, 248, 0.3);
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* Glassmorphism Effect */
+.glass-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: var(--accent);
+}
+
+/* Hero Section Modernized with V1 Image */
+.hero-v2 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                url('../img/hd_pictures/computer_coffee.jpg') center center fixed no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+/* Section Qui suis-je with V1 Image */
+.quisuisje-v2 {
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+                url('../img/hd_pictures/computer_work_2.jpg') center center fixed no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+/* Portfolio Section (Keep it cleaner or subtle) */
+#portfolio {
+    background-color: var(--bg-dark);
+}
+
+/* CV Section with V1 Image */
+.cv-v2 {
+    background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), 
+                url('../img/hd_pictures/computer_work_3.jpg') center center fixed no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.profile-img-v2 {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 4px solid var(--glass-border);
+    box-shadow: 0 0 40px var(--accent-glow);
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.project-card-v2 {
+    overflow: hidden;
+    height: 100%;
+}
+
+.project-img-container {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.project-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 0.5s ease;
+}
+
+.project-card-v2:hover img {
+    scale: 1.1;
+}
+
+/* Typography Improvements */
+h1, h2, h3 {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.accent-text {
+    color: var(--accent);
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    color: var(--bg-dark);
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+    background-color: #fff;
+    box-shadow: 0 0 20px var(--accent);
+}
+
+.p-justify {
+    text-align: justify;
+    hyphens: auto;
+}
