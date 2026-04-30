@@ -14,3 +14,11 @@ This project aims to refactor and modernize the existing landing page (V1) into 
 2. **Strategy:** Propose a new design and architecture for V2.
 3. **Execution:** Implement changes iteratively.
 4. **Validation:** Ensure responsiveness and visual integrity.
+
+## Corrections & Solutions validées (V2)
+- **Typographie :** Utilisation de 'Montserrat' pour les titres/UI et 'Merriweather' pour le corps de texte (justifié).
+- **Header :** Intégration de la photo ID (`MG-08-07-25-id.jpg`) à gauche du nom "FLORENT GERARD". Design compact et moderne.
+- **Arrière-plans (Backgrounds) :** Correction du superzoom via `background-attachment: scroll` (plus stable que `fixed` sur certains supports) et utilisation de la syntaxe shorthand `background: linear-gradient(...) url(...) center center / cover no-repeat`.
+- **Mise en page Hero :** Réduction de la taille du titre `display-3` et des paddings pour assurer que la section et ses boutons tiennent dans la hauteur de l'écran (viewport).
+- **Contenu :** Restauration stricte des textes originaux de la V1 pour préserver l'authenticité du parcours.
+- **Boutons :** Correction du contraste au survol (hover) sur le bouton "Me contacter".
