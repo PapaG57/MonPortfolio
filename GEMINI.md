@@ -22,3 +22,14 @@ This project aims to refactor and modernize the existing landing page (V1) into 
 - **Mise en page Hero :** Réduction de la taille du titre `display-3` et des paddings pour assurer que la section et ses boutons tiennent dans la hauteur de l'écran (viewport).
 - **Contenu :** Restauration stricte des textes originaux de la V1 pour préserver l'authenticité du parcours.
 - **Boutons :** Correction du contraste au survol (hover) sur le bouton "Me contacter".
+- **Compétences IA :** Mise en avant du Prompt Engineering et de l'utilisation des LLMs (Gemini, Copilot, ChatGPT) dans le CV.
+- **Formulaire de contact :** Activation via Formspree (`action="https://formspree.io/f/xykodaoy"`).
+- **Navigation :** Harmonisation de `index.html` et `rapports.html` (polices Montserrat/Merriweather).
+
+## Prochaines étapes
+1. **Mise en ligne du Projet 5 (Kanap) :**
+    - Localiser le code source du frontend.
+    - Évaluer les besoins du backend (Node.js/Express) pour le déploiement.
+    - Configurer GitHub Pages ou un autre hébergeur (Render/Vercel).
+2. **Mise en ligne des Projets 6 et 7.**
+3. **Optimisation finale SEO et Performance de la V2.**
