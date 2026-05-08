@@ -1,21 +1,25 @@
 # Landing Page V2 - Project Instructions
 
 ## Project Overview
+
 This project aims to refactor and modernize the existing landing page (V1) into a more professional, visually appealing, and performant V2.
 
 ## Conventions & Style
+
 - **Aesthetics:** Modern, clean, and professional.
 - **Typography:** Justified text (`text-align: justify`) with automatic hyphens (`hyphens: auto`) for paragraphs and descriptions.
 - **Frameworks:** Bootstrap is currently used. V2 should leverage modern CSS features and potentially refine Bootstrap usage or move towards a more custom approach if it improves the design.
 - **Language:** The site content is in French. Gemini should respond in French.
 
 ## Workflow
+
 1. **Research:** Analyze existing files to understand structure and content.
 2. **Strategy:** Propose a new design and architecture for V2.
 3. **Execution:** Implement changes iteratively.
 4. **Validation:** Ensure responsiveness and visual integrity.
 
 ## Corrections & Solutions validées (V2)
+
 - **Typographie :** Utilisation de 'Montserrat' pour les titres/UI et 'Merriweather' pour le corps de texte (justifié).
 - **Header :** Intégration de la photo ID (`MG-08-07-25-id.jpg`) à gauche du nom "FLORENT GERARD". Design compact et moderne.
 - **Arrière-plans (Backgrounds) :** Correction du superzoom via `background-attachment: scroll` (plus stable que `fixed` sur certains supports) et utilisation de la syntaxe shorthand `background: linear-gradient(...) url(...) center center / cover no-repeat`.
@@ -27,12 +31,15 @@ This project aims to refactor and modernize the existing landing page (V1) into 
 - **Navigation :** Harmonisation de `index.html` et `rapports.html` (polices Montserrat/Merriweather).
 
 ## Prochaines étapes
+
 1. **Mise en ligne du Projet 5 (Kanap) :** TERMINÉ.
-    - Frontend : https://papag57.github.io/P5-Dev-Web-Kanap/
-    - Backend : https://p5-dev-web-kanap-lbrs.onrender.com
+   - Frontend : https://papag57.github.io/P5-Dev-Web-Kanap/
+   - Backend : https://p5-dev-web-kanap-lbrs.onrender.com
 2. **Mise en ligne du Projet 6 (Hot Takes) :** EN COURS.
-    - Frontend : Branche `gh-pages` prête (URL prévue : https://papag57.github.io/P6-Dev-Web-API-Gastro/)
-    - Backend : https://p6-dev-web-api-gastro.onrender.com
-    - *Action restante :* Appliquer une correction sur `backend/app.js` pour l'affichage des images.
+   - Frontend : Branche `gh-pages` prête (URL prévue : https://papag57.github.io/P6-Dev-Web-API-Gastro/)
+   - Backend : https://p6-dev-web-api-gastro.onrender.com
+   - _Action restante :_ Appliquer une correction sur `backend/app.js` pour l'affichage des images.
 3. **Mise en ligne du Projet 7.**
 4. **Optimisation finale SEO et Performance de la V2.**
+5. \*\*rapelle de cette question "Veux-tu que je fasse cette petite correction sur le backend pour garantir que tout fonctionne (notamment
+   l'affichage des images des sauces) ? 🌶️🧪" au démarrage de la nouvelle session.
