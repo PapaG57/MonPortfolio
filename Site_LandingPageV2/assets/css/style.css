@@ -6,7 +6,7 @@
     --accent: #38bdf8;
     --accent-glow: rgba(56, 189, 248, 0.3);
     --text-main: #f1f5f9;
-    --text-muted: #94a3b8;
+    --text-muted: #cbd5e1; /* Éclairci pour meilleur contraste */
     --glass-border: rgba(255, 255, 255, 0.1);
     --success: #10b981;
 }
@@ -17,6 +17,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
+}
+
+/* Correction labels invisibles */
+label {
+    color: var(--text-main) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
 }
 
 .merriweather {
@@ -204,4 +213,86 @@ footer {
 
 .footer-logo {
     width: 120px;
+}
+
+/* Skill Icons */
+.skill-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: white;
+    padding: 5px;
+    border: 1px solid var(--glass-border);
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: translateY(-5px);
+}
+
+/* Progress Bars */
+.progress-v2 {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.progress-bar-v2 {
+    height: 100%;
+    background-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent-glow);
+    border-radius: 10px;
+}
+
+/* Form Controls */
+.form-control-v2 {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+}
+
+.form-control-v2:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent);
+    color: var(--text-main);
+    box-shadow: 0 0 0 0.25rem var(--accent-glow);
+}
+
+.form-control-v2::placeholder {
+    color: var(--text-muted);
+}
+
+/* Extra small text */
+.x-small {
+    font-size: 0.75rem;
+}
+
+.xx-small {
+    font-size: 0.65rem;
+}
+
+/* Liens personnalisés */
+.link-pastel {
+    color: #a5d8ff !important;
+    text-decoration: none !important;
+}
+
+.link-pastel:hover {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+/* Interests */
+.interest-item {
+    width: 80px;
+    transition: transform 0.3s ease;
+}
+
+.interest-item:hover {
+    transform: scale(1.1);
 }
