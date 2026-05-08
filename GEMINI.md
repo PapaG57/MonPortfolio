@@ -27,9 +27,12 @@ This project aims to refactor and modernize the existing landing page (V1) into 
 - **Navigation :** Harmonisation de `index.html` et `rapports.html` (polices Montserrat/Merriweather).
 
 ## Prochaines étapes
-1. **Mise en ligne du Projet 5 (Kanap) :**
-    - Localiser le code source du frontend.
-    - Évaluer les besoins du backend (Node.js/Express) pour le déploiement.
-    - Configurer GitHub Pages ou un autre hébergeur (Render/Vercel).
-2. **Mise en ligne des Projets 6 et 7.**
-3. **Optimisation finale SEO et Performance de la V2.**
+1. **Mise en ligne du Projet 5 (Kanap) :** TERMINÉ.
+    - Frontend : https://papag57.github.io/P5-Dev-Web-Kanap/
+    - Backend : https://p5-dev-web-kanap-lbrs.onrender.com
+2. **Mise en ligne du Projet 6 (Hot Takes) :** EN COURS.
+    - Frontend : Branche `gh-pages` prête (URL prévue : https://papag57.github.io/P6-Dev-Web-API-Gastro/)
+    - Backend : https://p6-dev-web-api-gastro.onrender.com
+    - *Action restante :* Appliquer une correction sur `backend/app.js` pour l'affichage des images.
+3. **Mise en ligne du Projet 7.**
+4. **Optimisation finale SEO et Performance de la V2.**
