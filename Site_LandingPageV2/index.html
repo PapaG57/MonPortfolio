@@ -419,22 +419,22 @@
         <div class="row justify-content-center">
           <div class="col-lg-7">
             <div class="glass-card">
-              <form id="contactForm" class="row g-3">
+              <form id="contactForm" class="row g-3" action="https://formspree.io/f/xykodaoy" method="POST">
                 <div class="col-md-6">
                   <label class="form-label small">Votre prénom *</label>
-                  <input type="text" class="form-control form-control-v2" required id="firstname" placeholder="Pierre" />
+                  <input type="text" name="firstname" class="form-control form-control-v2" required id="firstname" placeholder="Pierre" />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label small">Votre nom *</label>
-                  <input type="text" class="form-control form-control-v2" required id="lastname" placeholder="MARTIN" />
+                  <input type="text" name="lastname" class="form-control form-control-v2" required id="lastname" placeholder="MARTIN" />
                 </div>
                 <div class="col-12">
                   <label class="form-label small">Votre email *</label>
-                  <input type="email" class="form-control form-control-v2" required id="email" placeholder="exemple@email.com" />
+                  <input type="email" name="email" class="form-control form-control-v2" required id="email" placeholder="exemple@email.com" />
                 </div>
                 <div class="col-12">
                   <label class="form-label small">Votre message *</label>
-                  <textarea class="form-control form-control-v2" rows="4" required id="message" placeholder="Tapez votre message ici"></textarea>
+                  <textarea name="message" class="form-control form-control-v2" rows="4" required id="message" placeholder="Tapez votre message ici"></textarea>
                 </div>
                 <div class="col-12 text-center">
                   <button type="submit" class="btn btn-accent px-4 py-2">Envoyer le message</button>
