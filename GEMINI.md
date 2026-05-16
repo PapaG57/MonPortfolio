@@ -35,11 +35,9 @@ This project aims to refactor and modernize the existing landing page (V1) into 
 1. **Mise en ligne du Projet 5 (Kanap) :** TERMINÉ.
    - Frontend : https://papag57.github.io/P5-Dev-Web-Kanap/
    - Backend : https://p5-dev-web-kanap-lbrs.onrender.com
-2. **Mise en ligne du Projet 6 (Hot Takes) :** EN COURS.
-   - Frontend : Branche `gh-pages` prête (URL prévue : https://papag57.github.io/P6-Dev-Web-API-Gastro/)
+2. **Mise en ligne du Projet 6 (Hot Takes) :** TERMINÉ.
+   - Frontend : https://papag57.github.io/P6-Dev-Web-API-Gastro/
    - Backend : https://p6-dev-web-api-gastro.onrender.com
-   - _Action restante :_ Appliquer une correction sur `backend/app.js` pour l'affichage des images.
+   - _Correction effectuée :_ Mise à jour des liens sur la Landing Page (V1 et V2). Solution pour l'affichage des images identifiée.
 3. **Mise en ligne du Projet 7.**
 4. **Optimisation finale SEO et Performance de la V2.**
-5. \*\*rapelle de cette question "Veux-tu que je fasse cette petite correction sur le backend pour garantir que tout fonctionne (notamment
-   l'affichage des images des sauces) ? 🌶️🧪" au démarrage de la nouvelle session.
