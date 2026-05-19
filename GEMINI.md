@@ -39,5 +39,7 @@ This project aims to refactor and modernize the existing landing page (V1) into 
    - Frontend : https://papag57.github.io/P6-Dev-Web-API-Gastro/
    - Backend : https://p6-dev-web-api-gastro.onrender.com
    - _Correction effectuée :_ Mise à jour des liens sur la Landing Page (V1 et V2). Solution pour l'affichage des images identifiée.
-3. **Mise en ligne du Projet 7.**
+3. **Mise en ligne du Projet 7 (Groupomania) :** EN COURS.
+   - Base de données MySQL créée sur Aiven.
+   - Backend en cours de déploiement sur Render (configuration Sequelize mise à jour pour SSL/DATABASE_URL).
 4. **Optimisation finale SEO et Performance de la V2.**
