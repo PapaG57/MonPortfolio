@@ -6,76 +6,45 @@ require('dotenv').config({ path: '.env' });
 // création d'un compte utilisateur
 
 exports.signup = async (req, res) => {
-  const { firstname, lastname, username, email, password } = req.body;
-  if (
-    firstname == null ||
-    lastname == null ||
-    username == null ||
-    email == null ||
-    password == null
-  ) {
-    return res.status(400).json({ error: 'champs incomplet' });
-  }
-  if (firstname.length <= 2) {
-    return res.status(400).json({ error: 'prénom trop court' });
-  }
-  if (lastname.length <= 2) {
-    return res.status(400).json({ error: 'nom trop court' });
-  }
-  if (username.length <= 2) {
-    return res.status(400).json({ error: 'Username trop court' });
-  }
-
-  //Creation de la reg exp pour validation de l'adresse postale
-  const EMAIL =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (!EMAIL.test(email)) {
-    return res.status(400).json({ error: 'adresse email non valide' });
-  }
-
-  //Creation de la reg exp pour validation du mot de passe
-  const PASS = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,24}$/;
-  if (!PASS.test(password)) {
-    return res.status(400).json({
-      error:
-        'Votre mot de passe doit inclure 8 à 24 caractères avec au moins une majuscule, une minuscule, un nombre, et un caractère spécial',
-    });
-  }
-  await Users.findOne({ where: { email: email } }).then((exist) => {
-    if (exist) {
-      return res
-        .status(409)
-        .json({ error: 'Email ' + email + ' is already in use' });
-    } else {
-      Users.findOne({ where: { username: username } })
-        .then((exist) => {
-          if (!exist) {
-            bcrypt.hash(password, 10).then((hash) => {
-              Users.create({
-                firstname: firstname,
-                lastname: lastname,
-                username: username,
-                email: email,
-                password: hash,
-              })
-                .then((user) => {
-                  return res.status(201).json({ message: 'Utilisateur créé ' });
-                })
-                .catch((error) => {
-                  return res.status(500).json({ error: 'Erreur ' + error });
-                });
-            });
-          } else {
-            return res
-              .status(409)
-              .json({ error: 'Username ' + username + ' déjà pris' });
-          }
-        })
-        .catch((error) => {
-          return res.status(500).json({ error: 'Erreur ' + error });
-        });
+  try {
+    const { firstname, lastname, username, email, password } = req.body;
+    if (!firstname || !lastname || !username || !email || !password) {
+      return res.status(400).json({ error: 'champs incomplet' });
     }
-  });
+    
+    // ... (validations remain same)
+    if (firstname.length <= 2) return res.status(400).json({ error: 'prénom trop court' });
+    if (lastname.length <= 2) return res.status(400).json({ error: 'nom trop court' });
+    if (username.length <= 2) return res.status(400).json({ error: 'Username trop court' });
+
+    const EMAIL = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!EMAIL.test(email)) return res.status(400).json({ error: 'adresse email non valide' });
+
+    const PASS = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,24}$/;
+    if (!PASS.test(password)) {
+      return res.status(400).json({ error: 'Votre mot de passe doit inclure 8 à 24 caractères avec au moins une majuscule, une minuscule, un nombre, et un caractère spécial' });
+    }
+
+    const emailExist = await Users.findOne({ where: { email } });
+    if (emailExist) return res.status(409).json({ error: 'Email ' + email + ' is already in use' });
+
+    const usernameExist = await Users.findOne({ where: { username } });
+    if (usernameExist) return res.status(409).json({ error: 'Username ' + username + ' déjà pris' });
+
+    const hash = await bcrypt.hash(password, 10);
+    await Users.create({
+      firstname,
+      lastname,
+      username,
+      email,
+      password: hash,
+    });
+
+    return res.status(201).json({ message: 'Utilisateur créé' });
+  } catch (error) {
+    console.error('Signup Error:', error);
+    return res.status(500).json({ error: 'Erreur lors de la création du compte : ' + error.message });
+  }
 };
 
 // connection de l'utilisateur existant

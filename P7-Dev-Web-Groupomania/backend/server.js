@@ -38,12 +38,17 @@ const errorHandler = (error) => {
 };
 
 function createAdmin() {
-  Users.create({
-    username: process.env.ADMIN_USERNAME,
-    email: process.env.ADMIN_EMAIL,
-    password: bcrypt.hashSync(process.env.ADMIN_PASSWORD, 10),
-    isAdmin: 1,
-  });
+  if (process.env.ADMIN_PASSWORD) {
+    Users.create({
+      username: process.env.ADMIN_USERNAME || 'admin',
+      email: process.env.ADMIN_EMAIL || 'admin@groupomania.com',
+      password: bcrypt.hashSync(process.env.ADMIN_PASSWORD, 10),
+      isAdmin: 1,
+    }).then(() => console.log('Admin account created'))
+      .catch(err => console.log('Admin already exists or error:', err.message));
+  } else {
+    console.log('Skipping admin creation: ADMIN_PASSWORD not set');
+  }
 }
 
 // Lors du 1er démarrage du serveur, décommenter { force: true } et createAdmin();
@@ -63,12 +68,9 @@ server.listen(port, () => {
 // Ensuite, on tente la connexion à la base de données sans bloquer le serveur
 db.sequelize.sync({ force: false }).then(() => {
     console.log('Database synchronized and tables ready');
-    if (!isProduction) {
-      // createAdmin();
-    }
+    createAdmin();
 }).catch(err => {
     console.error('CRITICAL: Database synchronization failed:', err.message);
-    console.error('Details:', err);
 });
 
 server.on('error', errorHandler);

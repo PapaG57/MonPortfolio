@@ -17,18 +17,28 @@ const app = express();
 app.use(cors());
 app.use(helmet());
 
+app.get('/health', async (req, res) => {
+  try {
+    await sequelize.authenticate();
+    res.status(200).json({ 
+      status: 'OK', 
+      message: 'Backend is running',
+      database: 'Connected',
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    res.status(500).json({ 
+      status: 'Error', 
+      message: 'Backend is running but database is unreachable',
+      error: error.message 
+    });
+  }
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/api/sign', authRouter);
-app.get('/health', async (req, res) => {
-  try {
-    await sequelize.authenticate();
-    res.status(200).json({ status: 'OK', database: 'Connected' });
-  } catch (error) {
-    res.status(500).json({ status: 'Error', error: error.message });
-  }
-});
 app.use('/api/users', usersRouter);
 app.use('/api/posts', postsRouter);
 app.use('/api/likes', likesRouter);
