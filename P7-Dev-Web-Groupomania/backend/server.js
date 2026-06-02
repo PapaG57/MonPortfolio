@@ -62,12 +62,13 @@ server.listen(port, () => {
 
 // Ensuite, on tente la connexion à la base de données sans bloquer le serveur
 db.sequelize.sync({ force: false }).then(() => {
-    console.log('Database synchronized');
+    console.log('Database synchronized and tables ready');
     if (!isProduction) {
-      // createAdmin(); // Désactivé par sécurité pour éviter les doublons
+      // createAdmin();
     }
 }).catch(err => {
-    console.error('Database connection error:', err);
+    console.error('CRITICAL: Database synchronization failed:', err.message);
+    console.error('Details:', err);
 });
 
 server.on('error', errorHandler);
