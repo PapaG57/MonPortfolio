@@ -1,38 +1,50 @@
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
     e.preventDefault();
     
     const status = document.getElementById('formStatus');
     const btn = this.querySelector('button[type="submit"]');
+    const form = this;
     
-    // Simple validation feedback
-    const firstname = document.getElementById('firstname').value;
-    const lastname = document.getElementById('lastname').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    if (!firstname || !lastname || !email || !message) {
-        status.innerHTML = '<span class="text-danger">Veuillez remplir tous les champs obligatoires.</span>';
-        return;
-    }
+    const formData = new FormData(form);
 
     // Visual feedback for sending
     btn.disabled = true;
     btn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Envoi en cours...';
     
-    // Simulate API call
-    setTimeout(() => {
-        btn.innerHTML = 'Envoyé !';
-        btn.style.backgroundColor = 'var(--success)';
-        status.innerHTML = '<span class="text-success">Merci ' + firstname + ', votre message a bien été envoyé !</span>';
-        
-        // Reset form
-        this.reset();
-        
-        setTimeout(() => {
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            btn.innerHTML = 'Envoyé !';
+            btn.style.backgroundColor = 'var(--success)';
+            status.innerHTML = '<span class="text-success">Merci ! Votre message a bien été envoyé.</span>';
+            form.reset();
+            
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.innerHTML = 'Envoyer le message';
+                btn.style.backgroundColor = '';
+                status.innerHTML = '';
+            }, 5000);
+        } else {
+            const data = await response.json();
+            if (Object.hasOwn(data, 'errors')) {
+                status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+            } else {
+                status.innerHTML = '<span class="text-danger">Oups ! Un problème est survenu lors de l\'envoi.</span>';
+            }
             btn.disabled = false;
             btn.innerHTML = 'Envoyer le message';
-            btn.style.backgroundColor = '';
-            status.innerHTML = '';
-        }, 3000);
-    }, 1500);
+        }
+    } catch (error) {
+        status.innerHTML = '<span class="text-danger">Oups ! Impossible d\'envoyer le message pour le moment.</span>';
+        btn.disabled = false;
+        btn.innerHTML = 'Envoyer le message';
+    }
 });
