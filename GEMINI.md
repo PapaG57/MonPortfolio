@@ -44,4 +44,12 @@ This project aims to refactor and modernize the existing landing page (V1) into 
    - Backend sur Render.
    - Frontend sur GitHub Pages (https://papag57.github.io/P7-Dev-Web-Groupomania/).
    - Liens mis à jour sur la Landing Page (V1 et V2).
-4. **Optimisation finale SEO et Performance de la V2.**
+4. **Optimisation finale SEO et Performance de la V2.** : TERMINÉ.
+   - Intégration de balises meta SEO et Open Graph.
+   - Utilisation de formats WebP pour les images lourdes.
+   - Chargement différé (lazy loading) activé.
+   - Formulaire de contact fonctionnel via Formspree.
+
+## Archivage & Déploiement
+Le dossier `Site_LandingPageV2` est autonome et prêt pour le déploiement. Il contient tous les assets nécessaires.
+Une fois déployé à la racine du serveur, le reste du projet (V1 et fichiers de travail) peut être archivé.
